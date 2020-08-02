@@ -1,0 +1,14 @@
+/* Medium Mobile :480px. */
+
+@media only screen and (min-width: 576px) and (max-width: 766px) {
+	.hero-slider .slider-nav-warp {
+		padding: 0 15px;
+	}
+	.banner .tag-new {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 18px;
+		right: 0;
+		top: 0;
+	}
+}

@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<main class="main-container">
+    <section class="men_area pt-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+                    <div class="product-filter">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 col-sm-12">
+                                <h5 class="control-label">Sort By:</h5>
+                            </div>
+                            <div class="col-lg-2 col-md-auto col-sm-12">
+                                <select name="price-type" id="input-sort" class="form-control">
+                                    <option value="">Default</option>
+                                    <option value="">Name (A - Z)</option>
+                                    <option value="">Name (Z - A)</option>
+                                    <option value="">Price (Low > High)</option>
+                                    <option value="">Price (High > Low)</option>
+                                    <option value="">Rating (Lowest)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-1 col-sm-12">
+                                <h5 class="control-label">Sort By:</h5>
+                            </div>
+                            <div class="col-lg-2 col-md-auto col-sm-12">
+                                <select name="price-type" id="input-sort" class="form-control">
+                                    <option value="">Default</option>
+                                    <option value="">Name (A - Z)</option>
+                                    <option value="">Name (Z - A)</option>
+                                    <option value="">Price (Low > High)</option>
+                                    <option value="">Price (High > Low)</option>
+                                    <option value="">Rating (Lowest)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-1 col-sm-12">
+                                <h5 class="control-label">Sort By:</h5>
+                            </div>
+                            <div class="col-lg-2 col-md-auto col-sm-12">
+                                <select name="price-type" id="input-sort" class="form-control">
+                                    <option value="">Default</option>
+                                    <option value="">Name (A - Z)</option>
+                                    <option value="">Name (Z - A)</option>
+                                    <option value="">Price (Low > High)</option>
+                                    <option value="">Price (High > Low)</option>
+                                    <option value="">Rating (Lowest)</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-12">
+                                <h5 class="control-label">Sort By:</h5>
+                            </div>
+                            <div class="col-lg-2 col-md-auto col-sm-12">
+                                <select name="price-type" id="input-sort" class="form-control">
+                                    <option value="">Default</option>
+                                    <option value="">Name (A - Z)</option>
+                                    <option value="">Name (Z - A)</option>
+                                    <option value="">Price (Low > High)</option>
+                                    <option value="">Price (High > Low)</option>
+                                    <option value="">Rating (Lowest)</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row"></div>
+                        <div id="shop-all" class="row">
+                            <!-- Product Item #1 -->
+                            @for (int i = 0; i < 20; i++)
+                            {
+                                <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
+                                    <div class="product-img">
+                                        <img src="~/img/web_img/gorsele_erisilemiyor.jpg" alt="product">
+                                        <div class="product-hover">
+                                            <div class="product-cart">
+                                                <a class="btn btn-secondary btn-block" href="#">Add To Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- .product-img end -->
+                                    <div class="product-bio">
+                                        <h5>
+                                            <a href="#">CST/Berger yazılım sensin yazılım her yerde olmalojkj 215</a>
+                                        </h5>
+                                        <p class="product-price">$68.00</p>
+                                    </div>
+                                    <!-- .product-bio end -->
+
+                                </div>
+                            }
+                           
+                            <!-- .product-item end -->
+                        </div>
+                    </div>
+
+                    <!-- /.col-md-3 -->
+                </div>
+            </div>
+    </section>
+
+
+    <div class="clearfix"></div>
+</main>
+

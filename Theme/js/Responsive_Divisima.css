@@ -1,0 +1,25 @@
+ Responsive
+---------------------*/
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1175px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.product-slider .owl-nav {
+		position: relative;
+		left: 0;
+		top: 0;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.product-slider .owl-nav button.owl-prev,
+	.product-slider .owl-nav button.owl-next {
+		float: none;
+		left: 0;
+		right: 0;
+		margin: 0 10px;
+	}
+}

@@ -1,0 +1,55 @@
+/*===================================
+    CSS Animation
+====================================*/
+
+.sidebar-navigation .entry:before, .sidebar-navigation .entry, .button, .socials-box a, .socials-box a .fa, .search-drop-down .category-entry, .search-button, .header-functionality-entry, footer a, .product-slide-entry .title, .product-slide-entry .tag, .inline-product-entry .title, .inline-product-entry .image, .list-type-1 a, .hover-class-1:after, .hover-label, .menu-slider-arrows a .fa, .bottom-line-a, .top-line-a, .fixed-header-square-button .fa, .read-more, .product-mix-info, .simple-search-form .simple-submit, .departmets-drop-down .list a, .copyright a, .styled-form .submit-wrapper, .socials-box a .fa, .sidebar-logos-row a img, a.sale-entry:before, a.sale-entry .sale-price, a.sale-entry .sale-price span, a.sale-entry .sale-description, .breadcrumb-box a, .icon-entry .image, .quantity-selector .entry.number-minus, .quantity-selector .entry.number-plus, .tabs-container.style-1 .tab-switcher, .size-selector .entry:after, .color-selector .entry:after, .color-selector .entry:before, .blog-entry .title, .blog-entry .subtitle a, .blog-entry .subtitle a b, .blog-entry .readmore, .square-button, .tags-box a, .categories-list ul li a, .container-404 .text a, .portfolio-navigation a, .portfolio-entry .title, .action-button, .hover-layer, .continue-link, .accordeon-title, .traditional-cart-entry .tag, .traditional-cart-entry .title, .remove-button, .cart-summary-box .simple-link, .checkout-progress-widget a.step-entry, .simple-field, .column-article-entry .title, .product-slide-entry .subtitle{
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out;
+            -webkit-transition: all 0.15s ease-out;
+            transition: all 0.15s ease-out;
+            -ms-transition: all 0.15s ease-out;
+        }
+        
+        .disable-animation, .shop-grid .product-slide-entry .title {
+            -moz-transition: none!important;
+            -o-transition: none!important;
+            -webkit-transition: none!important;
+            transition: none!important;
+            -ms-transition: none!important;
+        }
+        .navigation-banner-content .subtitle, .swiper-slide .parallax-article .subtitle, .swiper-slide .parallax-article .description, .overlay-popup.active .popup-container {
+            transition-delay: 200ms;
+            -moz-transition-delay: 200ms;
+            -webkit-transition-delay: 200ms;
+            -ms-transition-delay: 200ms;
+        }
+        .navigation-banner-content .title {
+            transition-delay: 150ms;
+            -moz-transition-delay: 150ms;
+            -webkit-transition-delay: 150ms;
+            -ms-transition-delay: 150ms;
+        }
+        
+        .header-demo {
+            height: 250px;
+            position: relative;
+            background-size: cover;
+            background-position: center top;
+            margin-bottom: 50px;
+        }
+        
+        _:-ms-input-placeholder, :root .simple-field.simple-drop-down select {
+            padding-right: 22px;
+        }
+        _:-ms-input-placeholder, :root .size-1.simple-field.simple-drop-down select {
+            padding-right: 14px;
+        }
+        _:-ms-input-placeholder, :root .simple-drop-down select {
+            padding-right: 10px;
+        }
+        @media (max-width:991px) and (min-width:768px) {
+            .header-functionality-entry {
+                margin-left: 15px;
+            }
+        }
+        

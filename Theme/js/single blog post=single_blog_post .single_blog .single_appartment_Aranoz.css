@@ -1,0 +1,57 @@
+/* line 4, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .desc a {
+  font-size: 16px;
+  color: #232b2b !important;
+}
+
+/* line 10, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content {
+  padding: 38px 38px 23px;
+  border: 0px solid #edeff2;
+  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+
+/* line 14, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content p {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* line 18, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content p a {
+  color: #ff3368;
+}
+
+/* line 22, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.481;
+  margin-bottom: 16px;
+}
+
+/* line 28, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content h5 {
+  font-size: 15px;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+
+/* line 33, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content .list-unstyled {
+  margin-top: 33px;
+}
+
+/* line 35, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content .list-unstyled li {
+  display: inline;
+  margin-right: 17px;
+  color: #999999;
+}
+
+/* line 39, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_single_blog.scss */
+.single_blog_post .single_blog .single_appartment_content .list-unstyled li a {
+  margin-right: 8px;
+  color: #999999;
+}

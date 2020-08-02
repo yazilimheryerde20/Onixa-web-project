@@ -1,0 +1,77 @@
+.padding_top {
+    padding-top: 70px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.confirmation_part .confirmation_tittle {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.confirmation_part .single_confirmation_details {
+    margin-bottom: 15px;
+}
+
+.confirmation_part .single_confirmation_details {
+    background-color: #ecfdff;
+    padding: 35px 40px;
+}
+.confirmation_part .confirmation_tittle span {
+    color: #ff3368;
+}
+.confirmation_part .single_confirmation_details h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222222;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.confirmation_part .single_confirmation_details ul li {
+    position: relative;
+    text-transform: capitalize;
+    padding-left: 55%;
+    margin-bottom: 3px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.confirmation_part .single_confirmation_details ul li p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 21px;
+    color: #777777;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #000;
+    font-weight: 300;
+}
+.confirmation_part .single_confirmation_details ul li span {
+    color: #222222;
+}
+.confirmation_part .order_details_iner {
+    margin-top: 50px;
+    background-color: #ecfdff;
+    padding: 30px 30px 15px;
+    text-transform: capitalize;
+}

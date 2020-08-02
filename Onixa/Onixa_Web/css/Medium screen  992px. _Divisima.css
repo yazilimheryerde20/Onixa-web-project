@@ -1,0 +1,11 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.hero-slider .slider-nav-warp {
+		max-width: 930px;
+	}
+	.footer-widget ul {
+		margin-right: 5px;
+	}
+	.social-links a {
+		margin-right: 20px;
+	}
+}
