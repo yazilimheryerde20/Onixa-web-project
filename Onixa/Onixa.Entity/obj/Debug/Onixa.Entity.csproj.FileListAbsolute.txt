@@ -1,0 +1,6 @@
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\Onixa.Entity.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\Onixa.Entity.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.csprojAssemblyReference.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.pdb

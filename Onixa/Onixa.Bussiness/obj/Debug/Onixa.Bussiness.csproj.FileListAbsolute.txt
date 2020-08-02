@@ -1,0 +1,6 @@
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\bin\Debug\Onixa.Bussiness.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\bin\Debug\Onixa.Bussiness.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\obj\Debug\Onixa.Bussiness.csprojAssemblyReference.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\obj\Debug\Onixa.Bussiness.csproj.CoreCompileInputs.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\obj\Debug\Onixa.Bussiness.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Bussiness\obj\Debug\Onixa.Bussiness.pdb

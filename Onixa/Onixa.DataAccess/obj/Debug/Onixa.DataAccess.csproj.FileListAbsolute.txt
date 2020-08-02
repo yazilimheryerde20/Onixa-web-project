@@ -1,0 +1,6 @@
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\Onixa.DataAccess.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\Onixa.DataAccess.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\obj\Debug\Onixa.DataAccess.csprojAssemblyReference.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\obj\Debug\Onixa.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\obj\Debug\Onixa.DataAccess.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\obj\Debug\Onixa.DataAccess.pdb

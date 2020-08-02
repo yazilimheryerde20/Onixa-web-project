@@ -13,5 +13,10 @@ namespace Onixa_Web.Controllers
         {
             return View();
         }
+
+        public ActionResult ProductDetails()
+        {
+            return View();
+        }
     }
 }

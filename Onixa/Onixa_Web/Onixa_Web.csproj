@@ -170,7 +170,7 @@
     <Content Include="css\Product Sidebar Area css_Aranoz.css" />
     <Content Include="css\products.css" />
     <Content Include="css\Product_Filter_Section_Divisima.css" />
-    <Content Include="css\Radion_btn-.login_part-İssideouther-s.product_Aranoz.css" />
+    <Content Include="css\Radion_btn-login_part-İssideouther-sproduct_Aranoz.css" />
     <Content Include="css\Responsivestyle_Callie.css" />
     <Content Include="css\Responsive_Divisima.css" />
     <Content Include="css\revslider.css" />
@@ -674,6 +674,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Home\ProductDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
