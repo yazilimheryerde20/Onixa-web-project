@@ -50,18 +50,18 @@ a {
 }
 
 a:hover, a:focus {
-  color: #ee4266;
+  color: #A1CD39;
   text-decoration: none;
   outline: none;
 }
 
 ::-moz-selection {
-  background-color: #ee4266;
+  background-color: #A1CD39;
   color: #FFF;
 }
 
 ::selection {
-  background-color: #ee4266;
+  background-color: #A1CD39;
   color: #FFF;
 }
 
@@ -98,7 +98,7 @@ blockquote.blockquote:before {
   line-height: 70px;
   text-align: center;
   border-radius: 50%;
-  color: #ee4266;
+  color: #A1CD39;
   font-size: 30px;
   background: #fff;
   border: 2px solid #e8eaed;
@@ -210,10 +210,10 @@ textarea.input {
 }
 
 .primary-button {
-  background-color: #ee4266;
+  background-color: #A1CD39;
   color: #fff;
-  -webkit-box-shadow: 0px 0px 0px 2px #ee4266 inset;
-  box-shadow: 0px 0px 0px 2px #ee4266 inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #A1CD39 inset;
+  box-shadow: 0px 0px 0px 2px #A1CD39 inset;
 }
 
 .secondary-button {
@@ -225,7 +225,7 @@ textarea.input {
 
 .primary-button:hover, .primary-button:focus {
   background-color: transparent;
-  color: #ee4266;
+  color: #A1CD39;
 }
 
 .secondary-button:hover, .secondary-button:focus {
