@@ -14,11 +14,11 @@
 }
 
 #footer a {
-  color: #97989b;
+  color: white;
 }
 
 #footer a:hover, #footer a:focus {
-  color: #ee4266;
+  color: #A1CD39;
 }
 
 .footer-widget {
@@ -76,7 +76,7 @@
   text-align: center;
   height: 40px;
   background: #fff;
-  color: #ee4266;
+  color: #A1CD39;
   border: 1px solid #e8eaed;
   line-height: 40px;
   border-radius: 50%;
