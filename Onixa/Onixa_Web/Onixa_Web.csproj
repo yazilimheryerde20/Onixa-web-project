@@ -148,6 +148,7 @@
     <Content Include="css\footer part css_Aranoz.css" />
     <Content Include="css\footer.css" />
     <Content Include="css\Footerstyle_Callie.css" />
+    <Content Include="css\footer_fonts.css" />
     <Content Include="css\Footer_section_Divisima.css" />
     <Content Include="css\Generalstyle_Callie.css" />
     <Content Include="css\HeaderSection_Divisima.css" />
@@ -718,6 +719,8 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
