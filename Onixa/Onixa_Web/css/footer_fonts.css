@@ -107,7 +107,7 @@ dfn {
 
 /* line 134, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 h3 {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 25px;
 }
 /* line 84, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20.25px;
+  font-size: 16px;
 }
 
 h4 {
@@ -196,7 +196,7 @@ body {
   font-size: 14px;
 }
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #505050;
   font-weight: 400;
@@ -208,5 +208,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-      
+.dropdown-body h4{
+  color:#A1CD39;
+}
