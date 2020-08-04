@@ -17,29 +17,58 @@
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="img/web_img/favicon.ico" rel="shortcut icon"/>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-  
+    <link href="Content/site.css" rel="stylesheet" />
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
 	<!-- Font Awesome Icon -->
-
 	<link rel="stylesheet" href="css/font-awesome.min.css">
   
-	<link rel="stylesheet" href="css/Asidestyle._Callie.css">
-	<link rel="stylesheet" href="css/Footerstyle_Callie.css">
-	<link rel="stylesheet" href="css/Generalstyle_Callie.css">
-	<link rel="stylesheet" href="css/Navigationstyle_Callie.css">
-	<link rel="stylesheet" href="css/PageHeaderstyle_Callie.css">
-	<link rel="stylesheet" href="css/PostPagestyle_Callie.css">
-	<link rel="stylesheet" href="css/Responsivestyle_Callie.css">
+	<!-- Custom stlylesheet -->
+  
+    <link type="text/css" rel="stylesheet" href="css/Asidestyle._Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/Footerstyle_Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/Generalstyle_Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/Navigationstyle_Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/PageHeaderstyle_Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/PostPagestyle_Callie.css" />
+    <link type="text/css" rel="stylesheet" href="css/Responsivestyle_Callie.css" />
+
+    <link rel="stylesheet" href="css/lightslider.min.css">
+  
+    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
 	<link rel="stylesheet" href="css/flaticon.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/price_rangs.css">
+    <link rel="stylesheet" href="css/toolbar.css">
+    <link rel="stylesheet" href="css/service_part css_Aranoz.css">
+    <link rel="stylesheet" href="css/Confirmationcss_Aranoz.css">
+    <link rel="stylesheet" href="css/commoncssstart_Aranoz.css">
+    <link rel="stylesheet" href="css/product list css_Aranoz.css">
+    <link rel="stylesheet" href="css/price_rangs.css">
+    <link rel="stylesheet" href="css/Extend_css_start_Aranoz.css">
 
-    
-    
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/category_widget.css">
+    <link rel="stylesheet" href="css/discount_sidebar_menu.css">
+    <link rel="stylesheet" href="css/Animation_lookcare.css">
+    <link rel="stylesheet" href="css/normalize_lookcare.css">
+    <link rel="stylesheet" href="css/footer_fonts.css">
+   
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
     <link rel="stylesheet" href="css/Helpercss_Divisima.css">
     <link rel="stylesheet" href="css/Template default CSS_Divisima.css">
     <link rel="stylesheet" href="css/Large Mobile 480px. _Divisima.css">
@@ -47,6 +76,9 @@
     <link rel="stylesheet" href="css/Common elements-Buttons_Divisima.css">
     <link rel="stylesheet" href="css/Product page_Divisima.css">
     <link rel="stylesheet" href="css/footer_fonts.css">
+
+
+
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -426,13 +458,14 @@
 			        <div class="footer-logo">
 				    <a href="index.html" class="logo"><img src="./img/logo3.jpeg" alt=""></a>
                     </div>
-                    <div class="form-group">
+	        <div class="form-group">
                         <label for="sel1">DİL:</label>
-                        <select class="form-control" id="sel1">
-                          <option>TÜRKÇE</option>
-                          <option>İNGİLİZCE</option>
-                          <option>ALMANCA</option>
-                        </select>
+                        <select class="form-control" id="sel1" style="display: none;">
+                            <option>TÜRKÇE</option>
+                            <option>İNGİLİZCE</option>
+                            <option>ALMANCA</option>
+                          </select>
+                          <div class="nice-select wide small" tabindex="0"><span class="current">TÜRKÇE</span><ul class="list"><li data-value="TÜRKÇE" class="option selected focus">TÜRKÇE</li><li data-value="İNGİLİZCE" class="option">İNGİLİZCE</li><li data-value="ALMANCA" class="option">ALMANCA</li></ul></div>
                       </div>
 			        <p>Onixa ailesi olarak sizlere hizmet sunmaktan memnuniyet duyuyoruz. Denizli'de bulunan ofisimizde başta Denizli olmak üzere ülkemizin dört bir köşesine hizmet sunuyoruz.</p>
 			        <ul class="contact-social">
@@ -520,7 +553,7 @@
 			        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
     
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
-    <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with  <a href="http://onixa.com.tr/portfolyo" target="_blank">onixa.com.tr</a></p>
+    <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Bütün hakları saklıdır.| <a href="AnaSayfa.html" target="_blank">onixa mimari görselleştirme mağazası</a> | <a href="http://onixa.com.tr/portfolyo" target="_blank">onixa.com.tr</a></p>
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			</div>
 		    </div>
@@ -530,47 +563,44 @@
 	<!-- /container -->
     </footer>
     <!-- /FOOTER -->
-      <!-- /FOOTER -->
+      
+    </html>
+    <!-- jQuery Plugins -->
+    <script src="js/jquery.min.js"></script>
+	   
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
     
-      </html>
-      <!-- jQuery Plugins -->
-      <script src="js/jquery.min.js"></script>
-	     
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/main.js"></script>
-      
-      <script src="js/jquery.slicknav.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.nicescroll.min.js"></script>
-     
-      <script src="js/jquery-ui.min.js"></script>
-      
-     
-     
-     <!-- popper js -->
-     <script src="js/popper.min.js"></script>
-     <!-- easing js -->
-     <script src="js/jquery.magnific-popup.js"></script>
-     <!-- swiper js -->
-     <script src="js/lightslider.min.js"></script>
-     <!-- swiper js -->
-     <script src="js/masonry.pkgd.js"></script>
-     <!-- particles js -->
-     <script src="js/jquery.nice-select.min.js"></script>
-     <!-- slick js -->
-     <script src="js/slick.min.js"></script>
-     <script src="js/swiper.jquery.js"></script>
-     <script src="js/jquery.counterup.min.js"></script>
-     <script src="js/waypoints.min.js"></script>
-     <script src="js/contact.js"></script>
-     <script src="js/jquery.ajaxchimp.min.js"></script>
-     <script src="js/jquery.form.js"></script>
-     <script src="js/jquery.validate.min.js"></script>
-     <script src="js/mail-script.js"></script>
-     <script src="js/stellar.js"></script>
-     <!-- custom js -->
-     <script src="js/theme.js"></script>
-     <script src="js/custom.js"></script>
-
-
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+   
+    <script src="js/jquery-ui.min.js"></script>
+    
+   
+   
+   <!-- popper js -->
+   <script src="js/popper.min.js"></script>
+   <!-- easing js -->
+   <script src="js/jquery.magnific-popup.js"></script>
+   <!-- swiper js -->
+   <script src="js/lightslider.min.js"></script>
+   <!-- swiper js -->
+   <script src="js/masonry.pkgd.js"></script>
+   <!-- particles js -->
+   <script src="js/jquery.nice-select.min.js"></script>
+   <!-- slick js -->
+   <script src="js/slick.min.js"></script>
+   <script src="js/swiper.jquery.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/waypoints.min.js"></script>
+   <script src="js/contact.js"></script>
+   <script src="js/jquery.ajaxchimp.min.js"></script>
+   <script src="js/jquery.form.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/mail-script.js"></script>
+   <script src="js/stellar.js"></script>
+   <!-- custom js -->
+   <script src="js/theme.js"></script>
+   <script src="js/custom.js"></script>
