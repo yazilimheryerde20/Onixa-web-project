@@ -146,9 +146,36 @@ h3 {
 
 h4 {
   font-size: 16px;
+    color:black;
+  
 }
-
-
+.panel-heading h3{
+  color:black;
+}
+.login_part_form_iner h3{
+  color:black;
+}
+.login_part_form_iner h3{
+color:black;
+}
+.breadcrumb_iner_item h2{
+  color:black
+}
+.container h3{
+  color:black;
+}
+.contact-section  h2{
+  color:black;
+}
+.contact-section  h3{
+  color:black;
+}
+.s_product_text h2{
+  font-size:18px;
+}
+.media-body h5{
+  color:#A1CD39
+}
 p {
   margin: 0px 0px 20px;
 }
@@ -182,4 +209,4 @@ ul {
   padding: 0;
 }
 
-          
+      
