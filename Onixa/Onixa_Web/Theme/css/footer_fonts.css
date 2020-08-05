@@ -129,9 +129,6 @@ h5,
 h6 {
   line-height: 1.2em;
 }
-h5{
-  color: black;
-}
 h1 {
   font-size: 32.437px;
 }
@@ -219,4 +216,10 @@ ul {
 }
 .dropdown-body h4{
   color:#A1CD39;
+}
+.product-filter .yazi-stili{
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bold;
+  margin: 0px 0px 15px;
 }
