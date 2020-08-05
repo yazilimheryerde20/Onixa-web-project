@@ -7,7 +7,7 @@
   clear: both;
   cursor: pointer;
   display: block;
-  float: left;
+
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
@@ -136,3 +136,17 @@
 
 .no-csspointerevents .nice-select.open .list {
   display: block; }
+.form-group{
+  color:black;
+  font-weight:bold;
+}
+.form-group label{
+  color:black;
+}
+.form-group span{
+  color:black;
+  font-weight:bold;
+}
+#footer label {
+color: #A1CD39;
+}

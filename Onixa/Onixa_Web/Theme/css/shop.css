@@ -155,13 +155,19 @@
         }
         
         .product-item h5 a {
-            color: #313131;
+            color:black;
             font-size: 14px;
             font-weight: 700;
             line-height: 25px;
             text-transform: uppercase;
         }
-        
+        .product-item h4 a {
+            color: black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 25px;
+            text-transform: uppercase;
+        }
         .product-item h4 a:hover {
             color: #32c8de;
         }

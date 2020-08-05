@@ -671,6 +671,7 @@ font-weight: bold;
 color:black;
 font-size: 14px;
 }
+
 .s_product_text h2{
     color:#A1CD39;
 }
@@ -684,5 +685,28 @@ font-size: 14px;
     font-size:16px;
 }
 .review_item a{
+    font-weight: bold;
+}
+.s_product_text span{
+    color:#A1CD39;
+    font-size: 18px;
+   
+}
+.input-group .input-group-addon{
+    color: black;
+}
+.input-group .input-group-addon.list li{
+    color:black;
+}
+.input-group span{
+    color:black;
+}
+.input-group{
+    color:black;
+}
+.s_product_text a{
+    color:#A1CD39;
+    font-size: 25px;
+    font-weight: normal;
     font-weight: bold;
 }
