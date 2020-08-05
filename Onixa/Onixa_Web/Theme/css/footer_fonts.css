@@ -1,0 +1,218 @@
+/*----------------------------*\
+	tags widget
+\*----------------------------*/
+
+.tags-widget ul li {
+            display: inline-block;
+            margin-right: 4px;
+            margin-bottom: 6px;
+          }
+          
+          .tags-widget ul li a {
+            text-transform: uppercase;
+            display: block;
+            padding: 10px 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #97989b;
+            background-color: #323335;
+            border-radius: 2px;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+          }
+          
+          .tags-widget ul li a:hover, .tags-widget ul li a:focus {
+            color: #fff !important;
+            background-color: #A1CD39;
+          }
+          
+          /*----------------------------*\
+                      galery widget
+          \*----------------------------*/
+          
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  /*margin: 1.67em 0;*/
+  margin: 0 0 15px;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+* Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+* Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+* Address styling not present in Safari 5 and Chrome.
+*/
+
+dfn {
+  font-style: italic;
+}
+
+/**
+* Address differences between Firefox and other browsers.
+* Known issue: no IE 6/7 normalization.
+*/
+
+/* line 134, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
+h3 {
+  font-size: 16px;
+  line-height: 25px;
+}
+/* line 84, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 105, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
+h4 {
+  font-size: 18px;
+}
+/* line 117, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+}
+h5{
+  color: black;
+}
+h1 {
+  font-size: 32.437px;
+}
+
+h2 {
+  font-size: 25.629px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+    color:black;
+  
+}
+.panel-heading h3{
+  color:black;
+}
+.login_part_form_iner h3{
+  color:black;
+}
+.login_part_form_iner h3{
+color:black;
+}
+.breadcrumb_iner_item h2{
+  color:black
+}
+.container h3{
+  color:black;
+  font-size:20px;
+}
+.contact-section  h2{
+  color:black;
+}
+.contact-section  h3{
+  color:black;
+}
+.s_product_text h2{
+  font-size:18px;
+}
+.media-body h5{
+  color:#A1CD39
+}
+p {
+  margin: 0px 0px 20px;
+}
+/* line 105, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
+p {
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: white;
+  font-weight: 300;
+}
+.s_product_text p{
+  color:black;
+  font-weight: bold;
+}
+/* line 4, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color:black;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+/* line 231, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-body h4{
+  color:#A1CD39;
+}
