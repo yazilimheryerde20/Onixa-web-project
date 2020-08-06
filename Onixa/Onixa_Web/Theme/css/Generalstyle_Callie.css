@@ -19,7 +19,7 @@ a {
 }
 
 a:hover, a:focus {
- 
+  color: #A1CD39;
   text-decoration: none;
   outline: none;
 }

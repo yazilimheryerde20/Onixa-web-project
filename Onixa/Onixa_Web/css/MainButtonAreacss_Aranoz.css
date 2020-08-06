@@ -45,25 +45,28 @@
 }
 
 /* line 38, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
-.buton {
-    box-shadow: 0px 15px 15px -4px #276873;
-    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-    background-color:#599bb3;
-    border-radius:42px;
-    border:3px solid #29668f;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Times New Roman;
-    font-size:18px;
-    font-weight:bold;
-    padding:10px 23px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #3d768a;
-  }
+.btn_3 {
+  display: inline-block;
+  padding: 9px 42px;
+  border-radius: 50px;
+  background-color: black;
+  border: 1px solid #ecfdff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
+  border: 1px solid #A1CD39;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 /* line 52, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
-
+.btn_3:hover {
+  background-color: #A1CD39;
+  color: #fff;
+}
 
 /* line 57, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
 .btn_2 {
@@ -86,14 +89,7 @@
   text-transform: uppercase;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
 }
-.buton:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-.buton:active {
-	position:relative;
-	top:1px;
-}
+
 /* line 77, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
 .btn_2:hover {
   color: #fff !important;
@@ -135,18 +131,19 @@
 
 /*=================== custom button rule start ====================*/
 /* line 113, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
-.button {
+.btn_3 {
   display: inline-block;
-  border: 1px solid transparent;
+  padding: 9px 42px;
+  border-radius: 50px;
+  background-color: black;
+  border: 1px solid #ecfdff;
   font-size: 15px;
-  font-weight: 500;
-  padding: 12px 54px;
-  border-radius: 4px;
+  font-weight: 700;
   color: #fff;
-  border: 1px solid #edeff2;
   text-transform: uppercase;
-  background-color: #ff3368;
-  cursor: pointer;
+  font-weight: 400;
+  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
+  border: 1px solid #A1CD39;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
