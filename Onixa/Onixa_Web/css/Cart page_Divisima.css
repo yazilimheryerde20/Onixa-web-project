@@ -191,3 +191,30 @@
 	color: #f51167;
 	cursor: pointer;
 }
+.myButton {
+	box-shadow: 0px 17px 28px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #050505 100%);
+	background-color:#599bb3;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:10px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #050505 5%, #599bb3 100%);
+	background-color:#050505;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton{
+	float: right;
+	padding: 20px;
+}
