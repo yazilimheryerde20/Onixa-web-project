@@ -19,7 +19,7 @@
                         @for (int i = 0; i < 5; i++)
                         {
                             <div data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
-                                <img src="~/img/web_img/gorsele_erisilemiyor.jpg" />
+                                <img class="zoomImg" role="presentation" src="~/img/web_img/ac" />
                             </div>
                         }
                     </div>
@@ -98,10 +98,31 @@
                             <button type="button" title="Dismissible popover" class="btn btn-success btn-lg">Sepete Ekle</button>
                             <button type="button" class="btn btn-warning btn-lg">Satıcıya Danış</button>
                             <button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>
-                            
                         </div>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
                         
+                       
+
                         @*<div style="margin-top: 10px;"></div> <a href="#" class="btn_3">Sepete ekle</a>*@
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This is a small modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Modal -->
+                    </div>
                        
                     </div>
                 </div>
@@ -179,8 +200,6 @@
                
             });
         })(jQuery);
-        
-
-
+       
     </script>
 }

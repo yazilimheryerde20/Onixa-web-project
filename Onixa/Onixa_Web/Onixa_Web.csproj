@@ -307,6 +307,7 @@
     <Content Include="Scripts\jquery.slicknav.min.js" />
     <Content Include="Scripts\jquery.stellar.min.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.zoom.js" />
     <Content Include="Scripts\jquery.zoom.min.js" />
     <Content Include="Scripts\left-nav.js" />
     <Content Include="Scripts\lightslider.min.js" />
