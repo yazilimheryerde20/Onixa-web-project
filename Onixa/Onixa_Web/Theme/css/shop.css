@@ -100,6 +100,21 @@
             transition: all 0.2s ease-in-out;
             border-radius: 0;
         }
+        .single_product_item.product-cart .btn {
+            background-color: #2f2f2f;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            position: relative;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            border-radius: 0;
+        }
         
         .product-item .product-img .product-hover {
             position: absolute;

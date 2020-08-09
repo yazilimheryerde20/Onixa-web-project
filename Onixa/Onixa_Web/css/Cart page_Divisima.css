@@ -33,8 +33,17 @@
 	padding: 40px 34px 0;
 	background: #f0f0f0;
 	border-radius: 27px;
-	overflow-x: auto;
+	overflow-x: hidden;
 	
+}
+.mycart-table {
+	
+	overflow-x: scroll;
+	
+}
+.table .oda{
+	max-width: 200px;
+	min-width: 200px;	
 }
 
 
