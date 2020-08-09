@@ -38,12 +38,13 @@
 }
 .mycart-table {
 	
-	overflow-x: scroll;
+	overflow-x: auto;
+	padding-bottom: 10px;
 	
 }
 .table .oda{
-	max-width: 200px;
-	min-width: 200px;	
+	max-width: 50px;
+	min-width: 50px;	
 }
 
 
@@ -58,12 +59,13 @@
 	margin-bottom: 17px;
 }
 
-.cart-table table tr th {
+.cart-table .table .tr .th {
 	font-size: 12px;
 	font-weight: bold;
 	color: #414141;
 	text-align: left;
 	padding-bottom: 25px;
+	border-collapse:collapse;
 }
 
 .cart-table table tr th.product-th {
@@ -79,15 +81,16 @@
 }
 
 .cart-table .product-col {
-	display: table;
+	
 	margin-bottom: 19px;
+	min-width: 500px;
 }
 
 .cart-table .product-col img {
 	display: table-cell;
 	vertical-align: middle;
 	float: left;
-	width: 73px;
+	
 }
 
 .cart-table .product-col .pc-title {
@@ -146,23 +149,26 @@
 	padding-right: 70px;
 }
 
-.cart-table .total-cost {
-	background: #A1CD39;
+.cart-table .total-cost{
+	background-color: #A1CD39;
 	margin: 0 -100px;
 	text-align: right;
-	padding: 22px 0;
-	padding-right: 70px;
+	padding: 5px 80px;
 }
 
 .cart-table .total-cost h6 {
-	line-height: 1;
+	
 	font-size: 18px;
-	font-weight: 700;
 	color: #fff;
+	margin:0;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .cart-table .total-cost h6 span {
-	margin-left: 38px;
+	margin-left: 10px;
 }
 
 .card-right .site-btn {
@@ -201,13 +207,13 @@
 	cursor: pointer;
 }
 .myButton {
-	box-shadow:inset -2px 38px 0px -24px #91b8b3;
+	box-shadow:inset 0px 39px 0px -24px #91b8b3;
 	background-color:#768d87;
-	border-radius:42px;
-	border:1px solid #566963;
+	border-radius:12px;
+	border:3px solid #566963;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#ffffff!important;
 	font-family:Arial;
 	font-size:15px;
 	padding:6px 39px;
@@ -222,9 +228,69 @@
 	top:1px;
 }
 
-        
+      
 
-        
+.buton {
+	box-shadow:inset 0px 39px 0px -24px #91b8b3;
+	background-color:#768d87;
+	border-radius:6px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff!important;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2b665e;
+}
+.buton:hover {
+	background-color:#6c7c7c;
+}
+.buton:active {
+	position:relative;
+	top:1px;
+	margin-left: 10;
+}
+
+.Yazi p{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    
+     -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+    }
+.Yazi p{
+	color:black;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	  
+.total-cost h5{
+color:black;
+padding-right: 10px;
+padding-left: 10px;
+margin-right: auto;
+margin-left: auto;
+}
+.total-cost p{
+	color:black;
+	font-weight: bold;
+}
+.cart-table .project-col{
+	min-width: 200px;
+}
+
+.cart-table .room-col{
+	min-width: 150px;
+}
+
+
+		  
 
 
 
