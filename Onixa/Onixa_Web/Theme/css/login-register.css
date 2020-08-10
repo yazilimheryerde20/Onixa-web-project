@@ -5,10 +5,10 @@ body {
     font-size: 14px;
 }
 ::selection {
-    background-color: #ee4266;
+    background-color: white;
     color: #FFF;
 }
-(min-width: 992px)
+
 .padding_top {
     padding-top: 100px;
 }
@@ -18,7 +18,7 @@ body {
     background-image: -ms-linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
     background-size: 200% auto;
 }
-@media only screen and (max-width: 1200px) and (min-width: 992px)
+
 .login_part .login_part_text, .login_part .login_part_form {
     padding: 20px;
     height: 400px;

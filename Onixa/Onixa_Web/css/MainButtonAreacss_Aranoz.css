@@ -131,11 +131,11 @@
 
 /*=================== custom button rule start ====================*/
 /* line 113, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_button.scss */
-.btn_3 {
+.button {
   display: inline-block;
-  padding: 9px 42px;
+  padding: 9px 190px;
   border-radius: 50px;
-  background-color: black;
+  background-color: #A1CD39;
   border: 1px solid #ecfdff;
   font-size: 15px;
   font-weight: 700;
@@ -194,4 +194,92 @@
   padding: 12px 25px;
 }
 
-/* End Main Button Area css
+
+.login_part .form-group .btn_3 {
+    display: block;
+    width: 100%;
+    margin: 30px 0 17px;
+}
+.login_part .login_part_text .login_part_text_iner, .login_part .login_part_text .login_part_form_iner, .login_part .login_part_form .login_part_text_iner, .login_part .login_part_form .login_part_form_iner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.login_part .login_part_form {
+  padding: 0;
+}
+.login_part .login_part_form h3 {
+  margin-bottom: 20px;
+}
+
+.login_part .login_part_form h3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.p_star {
+  display: inline-block;
+  position: relative;
+}
+.login_part .login_part_form .form-control {
+  border: 0px solid transparent;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+::after, ::before {
+  box-sizing: border-box;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.login_part .creat_account {
+  margin-top: 11px;
+}
+.login_part .creat_account {
+  margin-top: 11px;
+}
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+::after, ::before {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 960px;
+}
+.row {
+  flex-wrap: wrap;
+}
+
+.btn_3 {
+  display: inline-block;
+  border-radius: 50px;
+  background-color:#A1CD39;
+  border: 1px solid #ecfdff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
+  border: 1px solid #A1CD39;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
