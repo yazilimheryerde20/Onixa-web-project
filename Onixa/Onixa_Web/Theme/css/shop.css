@@ -1,7 +1,33 @@
-/*------------------------------------*\
+﻿/*------------------------------------*\
 	#SHOP
 \*------------------------------------*/
+.product-item .product-bio h4 {
+    width: 200px;
+    overflow: hidden; /* ta�anlar� gizle */
+    white-space: nowrap; /* alt sat�ra hi� inme */
+    text-overflow: ellipsis; /* e�er uzunsa �� nokta koy */
+}
 
+@media only screen and (min-width : 992px) and (max-width: 1200px) {
+    .product-item .product-bio h4 {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .product-item .product-bio h4 {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+    .product-item .product-bio h4 {
+        width: 450px;
+        overflow: hidden; /* ta�anlar� gizle */
+        white-space: nowrap; /* alt sat�ra hi� inme */
+        text-overflow: ellipsis; /* e�er uzunsa �� nokta koy */
+    }
+}
 .product-num {
             padding-top: 12px;
             padding-bottom: 12px;
@@ -739,4 +765,11 @@ font-size: 14px;
 }
 .s_product_text.buton{ 
     font-weight: bold;
+}
+.product-item h5 a {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
 }
