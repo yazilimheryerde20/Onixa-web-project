@@ -441,3 +441,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+table thead tr th{
+    text-align: center;
+}
+table tbody tr .product-col img{
+    width: 100px;
+}
