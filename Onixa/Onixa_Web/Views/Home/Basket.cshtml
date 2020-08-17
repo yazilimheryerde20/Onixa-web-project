@@ -182,13 +182,6 @@
 
                     </div>
 
-
-
-
-
-
-
-
                 </div>
             </div>
 
@@ -380,6 +373,18 @@
     </div>
 </section>
 
+@section scripts{
+    <script>
+        (function ($) {
+            $(document).ready(function () {
 
+                $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+                $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+
+            });
+
+        })(jQuery);
+    </script>
+}
 
 

@@ -157,7 +157,6 @@
     <Content Include="css\jquery-ui.min.css" />
     <Content Include="css\jquery.bxslider.css" />
     <Content Include="css\jquery.mobile-menu.css" />
-    <Content Include="css\Large Mobile 480px. _Divisima.css" />
     <Content Include="css\LatestBlogAreacss_Aranoz.css" />
     <Content Include="css\Latest_Blog_Areacss_Aranoz.css" />
     <Content Include="css\Latest_Product_Section_Divisima.css" />
@@ -165,8 +164,6 @@
     <Content Include="css\login-register.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\MainButtonAreacss_Aranoz.css" />
-    <Content Include="css\Medium Mobile 480px. _Divisima.css" />
-    <Content Include="css\Medium screen  992px. _Divisima.css" />
     <Content Include="css\MenuPartStart_Aranoz.css" />
     <Content Include="css\Navigationstyle_Callie.css" />
     <Content Include="css\nice-select.css" />
@@ -201,12 +198,10 @@
     <Content Include="css\slick.min.css" />
     <Content Include="css\slicknav.min.css" />
     <Content Include="css\slider.css" />
-    <Content Include="css\Small Mobile 320px. _Divisima.css" />
     <Content Include="css\StartBlogAreacss_Aranoz.css" />
     <Content Include="css\Start_Blog_Single Styles_Aranoz.css" />
     <Content Include="css\subscribe now _Aranoz.css" />
     <Content Include="css\swiper.min.css" />
-    <Content Include="css\Tablet 768px. Divisima.css" />
     <Content Include="css\Template default CSS_Divisima.css" />
     <Content Include="css\themify-icons.css" />
     <Content Include="css\toolbar.css" />
