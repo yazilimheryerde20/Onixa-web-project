@@ -2,7 +2,7 @@
 	#SHOP
 \*------------------------------------*/
 .product-item .product-bio h4 {
-    width: 200px;
+    width: 270px;
     overflow: hidden; /* ta�anlar� gizle */
     white-space: nowrap; /* alt sat�ra hi� inme */
     text-overflow: ellipsis; /* e�er uzunsa �� nokta koy */
