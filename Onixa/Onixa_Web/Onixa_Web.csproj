@@ -649,6 +649,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -728,7 +729,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Onixa.Bussiness\Onixa.Bussiness.csproj">
+      <Project>{edf60ef3-629b-4f59-a83a-9a9b3d171f36}</Project>
+      <Name>Onixa.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Onixa.Entity\Onixa.Entity.csproj">
+      <Project>{7c46cde5-e035-46e8-a2b7-890eaa7ed693}</Project>
+      <Name>Onixa.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

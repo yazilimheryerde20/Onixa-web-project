@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Onixa.Bussiness.Concrete;
+using Onixa.Entity;
 
 namespace Onixa_Web.Controllers
 {
@@ -42,6 +44,14 @@ namespace Onixa_Web.Controllers
         public ActionResult ForgotPassword()
         {
             return View();
+        }
+
+        public string deneme()
+        {
+            var myModel = new Models.HomeModel();
+            myModel.addressManager.GelAll();
+
+            return "sada";
         }
     }
 }

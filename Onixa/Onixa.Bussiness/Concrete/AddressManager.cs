@@ -15,7 +15,7 @@ namespace Onixa.Bussiness.Concrete
         
         public Adresses Add(Adresses address)
         {
-            throw new NotImplementedException();
+            return _addressDal.Add(address);
         }
 
         public void Delete()

@@ -47,3 +47,16 @@ C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\obj\Debug\Onixa_We
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\obj\Debug\Onixa_Web.csproj.CopyComplete
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\obj\Debug\Onixa_Web.dll
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\obj\Debug\Onixa_Web.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Bussiness.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Entity.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.DataAccess.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Core.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\EntityFramework.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Bussiness.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Entity.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Entity.dll.config
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.DataAccess.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.DataAccess.dll.config
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Core.pdb
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Core.dll.config
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\EntityFramework.xml
