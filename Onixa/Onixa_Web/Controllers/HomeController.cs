@@ -48,17 +48,9 @@ namespace Onixa_Web.Controllers
 
         public string deneme()
         {
-            var myModel = Models.HomeModel();
-            AddressManager addressManager=new AddressManager();
-            
-            addressManager.Add(new Adresses
-            {
-                Name = "asd",
-                Description = "asdas",
-                AddedDate = DateTime.Now,
-                Member_Id = 1,
-                UserBy = "asda"
-            });
+            var myModel = new Models.HomeModel();
+            myModel.addressManager.GelAll();
+
             return "sada";
         }
     }
