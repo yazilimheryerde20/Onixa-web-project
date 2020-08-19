@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SitedbModelStoreContainer" CdmEntityContainer="SitedbEntities">
+  <EntityContainerMapping StorageEntityContainer="SitedbModelStoreContainer" CdmEntityContainer="SitedbContext">
     <EntitySetMapping Name="Adresses">
       <EntityTypeMapping TypeName="SitedbModel.Adresses">
         <MappingFragment StoreEntitySet="Adresses">
@@ -47,6 +47,15 @@
           <ScalarProperty Name="Details" ColumnName="Details" />
           <ScalarProperty Name="UserBy" ColumnName="UserBy" />
           <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeRooms">
+      <EntityTypeMapping TypeName="SitedbModel.HomeRooms">
+        <MappingFragment StoreEntitySet="HomeRooms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -235,15 +244,6 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="User_Id" ColumnName="User_Id" />
           <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="HomeRooms">
-      <EntityTypeMapping TypeName="SitedbModel.HomeRooms">
-        <MappingFragment StoreEntitySet="HomeRooms">
-          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
-          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -5,12 +5,12 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="AddedDate" Type="DateTime" Precision="3" />
     <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-    <Property Name="Member_Id" Type="Int32" Nullable="false" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Member_Id" Type="Int32" />
+    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Members" Relationship="Self.FK_Adresses_Members" FromRole="Adresses" ToRole="Members" />
     <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Adresses" FromRole="Adresses" ToRole="Orders" />
   </EntityType>
@@ -52,6 +52,15 @@
     <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
+  <EntityType Name="HomeRooms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="Rooms" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_HomeRooms_Project" FromRole="HomeRooms" ToRole="Project" />
+  </EntityType>
   <EntityType Name="Localizations">
     <Key>
       <PropertyRef Name="Id" />
@@ -79,13 +88,13 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
     <Property Name="Surname" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Bıo" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
-    <Property Name="Password" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="ProfıleImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AddedDate" Type="DateTime" Precision="3" />
     <Property Name="ModıfıedDate" Type="DateTime" Precision="3" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Adresses" Relationship="Self.FK_Adresses_Members" FromRole="Members" ToRole="Adresses" />
     <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Members" FromRole="Members" ToRole="Comments" />
     <NavigationProperty Name="Messages_" Relationship="Self.FK_Messages_Members" FromRole="Members" ToRole="Messages_" />
@@ -213,8 +222,8 @@
     <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
     <Property Name="Member_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HomeRooms" Relationship="Self.FK_HomeRooms_Project" FromRole="Project" ToRole="HomeRooms" />
     <NavigationProperty Name="Members" Relationship="Self.FK_Project_Members" FromRole="Project" ToRole="Members" />
-    <NavigationProperty Name="HomeRooms" Relationship="SitedbModel.FK_HomeRooms_Project" FromRole="Project" ToRole="HomeRooms" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -256,7 +265,7 @@
     <NavigationProperty Name="Users" Relationship="Self.FK_Users_Roles_Users" FromRole="Users_Roles" ToRole="Users" />
   </EntityType>
   <Association Name="FK_Adresses_Members">
-    <End Role="Members" Type="Self.Members" Multiplicity="1">
+    <End Role="Members" Type="Self.Members" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Adresses" Type="Self.Adresses" Multiplicity="*" />
@@ -332,6 +341,18 @@
       </Principal>
       <Dependent Role="Comments">
         <PropertyRef Name="Product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HomeRooms_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="HomeRooms" Type="Self.HomeRooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HomeRooms">
+        <PropertyRef Name="ProjectID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -489,11 +510,12 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="SitedbEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="SitedbContext" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Adresses" EntityType="Self.Adresses" />
     <EntitySet Name="Categories" EntityType="Self.Categories" />
     <EntitySet Name="Comments" EntityType="Self.Comments" />
     <EntitySet Name="Exceptions" EntityType="Self.Exceptions" />
+    <EntitySet Name="HomeRooms" EntityType="Self.HomeRooms" />
     <EntitySet Name="Localizations" EntityType="Self.Localizations" />
     <EntitySet Name="Logs" EntityType="Self.Logs" />
     <EntitySet Name="Members" EntityType="Self.Members" />
@@ -532,6 +554,10 @@
     <AssociationSet Name="FK_Comments_Products" Association="Self.FK_Comments_Products">
       <End Role="Products" EntitySet="Products" />
       <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HomeRooms_Project" Association="Self.FK_HomeRooms_Project">
+      <End Role="Project" EntitySet="Project" />
+      <End Role="HomeRooms" EntitySet="HomeRooms" />
     </AssociationSet>
     <AssociationSet Name="FK_Messages_Members" Association="Self.FK_Messages_Members">
       <End Role="Members" EntitySet="Members" />
@@ -581,31 +607,5 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="Users_Roles" EntitySet="Users_Roles" />
     </AssociationSet>
-    <EntitySet Name="HomeRooms" EntityType="SitedbModel.HomeRooms" />
-    <AssociationSet Name="FK_HomeRooms_Project" Association="SitedbModel.FK_HomeRooms_Project">
-      <End Role="Project" EntitySet="Project" />
-      <End Role="HomeRooms" EntitySet="HomeRooms" />
-    </AssociationSet>
   </EntityContainer>
-  <EntityType Name="HomeRooms">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ProjectID" Type="Int32" />
-    <Property Name="Rooms" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Project" Relationship="SitedbModel.FK_HomeRooms_Project" FromRole="HomeRooms" ToRole="Project" />
-  </EntityType>
-  <Association Name="FK_HomeRooms_Project">
-    <End Type="SitedbModel.Project" Role="Project" Multiplicity="0..1" />
-    <End Type="SitedbModel.HomeRooms" Role="HomeRooms" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Project">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="HomeRooms">
-        <PropertyRef Name="ProjectID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
 </Schema>

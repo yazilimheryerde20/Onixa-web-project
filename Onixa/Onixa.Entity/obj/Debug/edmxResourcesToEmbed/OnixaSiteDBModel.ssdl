@@ -5,12 +5,12 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Description" Type="nvarchar" MaxLength="250" Nullable="false" />
-    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="AddedDate" Type="datetime" />
     <Property Name="ModifiedDate" Type="datetime" />
-    <Property Name="Member_Id" Type="int" Nullable="false" />
-    <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Member_Id" Type="int" />
+    <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Categories">
     <Key>
@@ -80,13 +80,13 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="25" />
     <Property Name="Surname" Type="nvarchar" MaxLength="25" />
-    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="Bıo" Type="nvarchar" MaxLength="300" />
-    <Property Name="Password" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="60" />
     <Property Name="ProfıleImageName" Type="nvarchar" MaxLength="50" />
-    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" />
     <Property Name="ModıfıedDate" Type="datetime" />
-    <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Messages_">
     <Key>
@@ -227,7 +227,7 @@
     <Property Name="Role_Id" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_Adresses_Members">
-    <End Role="Members" Type="Self.Members" Multiplicity="1">
+    <End Role="Members" Type="Self.Members" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Adresses" Type="Self.Adresses" Multiplicity="*" />

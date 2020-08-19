@@ -12,13 +12,18 @@ namespace Onixa.Bussiness.Concrete
     public class AddressManager : IAddressService
     {
         private IAddressDal _addressDal;
+
+        public AddressManager(IAddressDal addressDal)
+        {
+            _addressDal = addressDal;
+        }
         
         public Adresses Add(Adresses address)
         {
             return _addressDal.Add(address);
         }
 
-        public void Delete()
+        public void Delete(Adresses adresses)
         {
             throw new NotImplementedException();
         }

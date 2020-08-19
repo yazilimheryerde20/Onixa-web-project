@@ -60,3 +60,8 @@ C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.DataAcce
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Core.pdb
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Core.dll.config
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\EntityFramework.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Ninject.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Onixa.Bussiness.dll.config
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa_Web\bin\Ninject.xml

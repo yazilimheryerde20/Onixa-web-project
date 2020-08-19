@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Onixa.Bussiness.DependencyResolvers.Ninject;
+using Onixa.Core.Utilities.Mvc.Infrastructure;
 
 namespace Onixa_Web
 {
@@ -13,6 +15,7 @@ namespace Onixa_Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule()));
         }
     }
 }

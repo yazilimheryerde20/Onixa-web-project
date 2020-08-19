@@ -3,19 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Onixa.Bussiness.Abstact;
 using Onixa.Bussiness.Concrete;
+using Onixa.DataAccess.Concrete.EntityFramework;
 using Onixa.Entity;
+using Onixa_Web;
 
 namespace Onixa_Web.Controllers
 {
     public class HomeController : Controller
     {
         // GET: Home
+        private IProductService _productService;
+
+        public HomeController(IProductService productService)
+        {
+            _productService = productService;
+        }
         public ActionResult Index()
         {
-            return View();
+            var model = new ProductListViewModel
+            {
+                Products = _productService.GelAll()
+            };
+            return View(model);
         }
 
+        
         public ActionResult ProductDetails()
         {
             return View();
@@ -48,9 +62,14 @@ namespace Onixa_Web.Controllers
 
         public string deneme()
         {
-            var myModel = new Models.HomeModel();
-            myModel.addressManager.GelAll();
-
+         AddressManager addressManager=new AddressManager(new EFAddressDal());
+         addressManager.Add(new Adresses
+         {
+            Name="sadd",
+            Description = "sdfsdf",
+            Member_Id=1,
+            UserBy = "fgfgf"
+         });
             return "sada";
         }
     }

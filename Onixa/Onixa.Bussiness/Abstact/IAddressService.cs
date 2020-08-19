@@ -13,6 +13,6 @@ namespace Onixa.Bussiness.Abstact
       Adresses GetById(int id);
       Adresses Add(Adresses address);
       Adresses Update(Adresses address);
-      void Delete();
+      void Delete(Adresses adresses);
   }
 }

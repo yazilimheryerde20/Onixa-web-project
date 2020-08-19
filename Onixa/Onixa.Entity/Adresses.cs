@@ -23,9 +23,9 @@ namespace Onixa.Entity
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public System.DateTime AddedDate { get; set; }
+        public Nullable<System.DateTime> AddedDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
-        public int Member_Id { get; set; }
+        public Nullable<int> Member_Id { get; set; }
         public string UserBy { get; set; }
     
         public virtual Members Members { get; set; }

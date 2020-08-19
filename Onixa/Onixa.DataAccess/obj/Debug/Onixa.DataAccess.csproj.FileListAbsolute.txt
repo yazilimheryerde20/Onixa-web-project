@@ -16,3 +16,16 @@ C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\O
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\EntityFramework.xml
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\obj\Debug\Onixa.DataAccess.csproj.CopyComplete
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.Mvc.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\Ninject.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.Razor.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.Mvc.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\Ninject.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.Razor.xml
+C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.DataAccess\bin\Debug\System.Web.WebPages.Deployment.xml

@@ -34,7 +34,7 @@ namespace Onixa.Entity
         public string Bıo { get; set; }
         public string Password { get; set; }
         public string ProfıleImageName { get; set; }
-        public System.DateTime AddedDate { get; set; }
+        public Nullable<System.DateTime> AddedDate { get; set; }
         public Nullable<System.DateTime> ModıfıedDate { get; set; }
         public string UserBy { get; set; }
     

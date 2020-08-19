@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Onixa.Entity
 {
     using System;
@@ -21,7 +23,7 @@ namespace Onixa.Entity
             this.OrderDetails = new HashSet<OrderDetails>();
             this.ProductDetails = new HashSet<ProductDetails>();
         }
-    
+        [Key]
         public int Product_Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

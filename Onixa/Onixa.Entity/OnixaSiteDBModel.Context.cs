@@ -13,22 +13,23 @@ namespace Onixa.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SitedbEntities : DbContext
+    public partial class SitedbContext : DbContext
     {
-        public SitedbEntities()
-            : base("name=SitedbEntities")
+        public SitedbContext()
+            : base("name=SitedbContext")
         {
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            //throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<Adresses> Adresses { get; set; }
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Comments> Comments { get; set; }
         public virtual DbSet<Exceptions> Exceptions { get; set; }
+        public virtual DbSet<HomeRooms> HomeRooms { get; set; }
         public virtual DbSet<Localizations> Localizations { get; set; }
         public virtual DbSet<Logs> Logs { get; set; }
         public virtual DbSet<Members> Members { get; set; }
@@ -44,6 +45,5 @@ namespace Onixa.Entity
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Users_Roles> Users_Roles { get; set; }
-        public virtual DbSet<HomeRooms> HomeRooms { get; set; }
     }
 }
