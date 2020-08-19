@@ -17,14 +17,14 @@ namespace Onixa.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Members()
         {
-            this.Adresses = new HashSet<Adresses>();
+            this.Address = new HashSet<Address>();
             this.Comments = new HashSet<Comments>();
             this.Messages_ = new HashSet<Messages_>();
             this.Messages_1 = new HashSet<Messages_>();
             this.MessagesReplies = new HashSet<MessagesReplies>();
             this.MessagesReplies1 = new HashSet<MessagesReplies>();
-            this.Orders = new HashSet<Orders>();
             this.Project = new HashSet<Project>();
+            this.Orders = new HashSet<Orders>();
         }
     
         public int Id { get; set; }
@@ -39,7 +39,7 @@ namespace Onixa.Entity
         public string UserBy { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Adresses> Adresses { get; set; }
+        public virtual ICollection<Address> Address { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comments> Comments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -51,8 +51,8 @@ namespace Onixa.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MessagesReplies> MessagesReplies1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Orders> Orders { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Project> Project { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

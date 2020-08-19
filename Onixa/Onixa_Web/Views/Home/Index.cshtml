@@ -1,4 +1,4 @@
-﻿@model Onixa_Web.ProductListViewModel
+﻿@model Onixa_Web.Models.ProductListViewModel
 @{
     ViewBag.Title = "Index";
 }
@@ -59,11 +59,11 @@
                        
                         <div id="shop-all" class="row">
                             <!-- Product Item #1 -->
-                            @for (int i = 0; i < 8; i++)
+                            @foreach (var item in Model.Products)
                             {
                                 <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
                                     <div class="product-img">
-                                       <img src="~/img/web_img/gorsele_erisilemiyor.jpg" alt="product">
+                                        <img src="~/img/@item.ImageName" alt="product">
                                         <div class="product-sale">
                                             İNDİRİM
                                         </div>
@@ -77,17 +77,19 @@
                                     <!-- .product-img end -->
                                     <div class="product-bio">
                                         <h4>
-                                            <a href="~/Home/ProductDetails" title="Ürün Başlığı Uzun Şekilde yazılmak istenirse bu şekil görüntülenecektir">Ürün Başlığı Uzun Şekilde yazılmak istenirse bu şekil görüntülenecektir</a>
+                                            <a href="~/Home/ProductDetails" title="Ürün Başlığı Uzun Şekilde yazılmak istenirse bu şekil görüntülenecektir">@item.Name</a>
                                         </h4>
                                         <p class="product-price">
-                                            <span>$40.00</span>
-                                            $32.00</p>
+                                            <span>@item.Price</span>
+                                            Paha </p>
                                     </div>
                                     <!-- .product-bio end -->
     
                                 </div>
-                                <!-- .product-item end -->
                             }
+                                
+                                <!-- .product-item end -->
+                            
 
                         </div>
                     </div>

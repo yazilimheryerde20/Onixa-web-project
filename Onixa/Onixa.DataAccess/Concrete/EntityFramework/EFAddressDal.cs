@@ -9,7 +9,7 @@ using Onixa.DataAccess.Abstract;
 
 namespace Onixa.DataAccess.Concrete.EntityFramework
 {
-   public class EFAddressDal:EFEntityRepositoryBase<Adresses,SitedbContext>,IAddressDal
+   public class EFAddressDal:EFEntityRepositoryBase<Address,SitedbContext>,IAddressDal
     {
     }
 }

@@ -4,8 +4,8 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SitedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Adresses">
+    <Schema Namespace="SitedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Address">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -19,12 +19,12 @@
         </EntityType>
         <EntityType Name="Categories">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Category_Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Name_" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Category_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name_" Type="nvarchar" MaxLength="50" />
           <Property Name="ParentID" Type="int" />
-          <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
           <Property Name="AddedDate" Type="datetime" />
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
@@ -133,27 +133,29 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Product_Id" Type="int" Nullable="false" />
-          <Property Name="Price" Type="decimal" Precision="8" Scale="2" Nullable="false" />
-          <Property Name="Quantity" Type="int" Nullable="false" />
-          <Property Name="Discount" Type="tinyint" Nullable="false" />
-          <Property Name="Order_Id" Type="int" Nullable="false" />
-          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="Product_Id" Type="int" />
+          <Property Name="Price" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Discount" Type="tinyint" />
+          <Property Name="Order_Id" Type="int" />
+          <Property Name="AddedDate" Type="datetime" />
           <Property Name="ModifiedDate" Type="datetime" />
-          <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Orders">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Number" Type="nvarchar" MaxLength="12" Nullable="false" />
           <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Member_Id" Type="int" Nullable="false" />
           <Property Name="Address_Id" Type="int" Nullable="false" />
           <Property Name="AddedDate" Type="datetime" Nullable="false" />
           <Property Name="ModifiedDate" Type="datetime" />
-          <Property Name="Description" Type="nvarchar" MaxLength="150" />
+          <Property Name="MemberDescription" Type="nvarchar" MaxLength="150" />
+          <Property Name="Product_Id" Type="int" />
+          <Property Name="Project_Id" Type="int" />
+          <Property Name="HomeRoom_Id" Type="int" />
           <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="ProductDetails">
@@ -173,18 +175,18 @@
             <PropertyRef Name="Product_Id" />
           </Key>
           <Property Name="Product_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="40" />
           <Property Name="Description" Type="nvarchar" MaxLength="1000" />
-          <Property Name="Price" Type="decimal" Precision="8" Scale="2" Nullable="false" />
-          <Property Name="StartPoint" Type="int" Nullable="false" />
-          <Property Name="ImageName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Price" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="StartPoint" Type="int" />
+          <Property Name="ImageName" Type="nvarchar" MaxLength="250" />
           <Property Name="IsContinued" Type="bit" />
-          <Property Name="UnıtInStock" Type="int" Nullable="false" />
-          <Property Name="StartGivenMemberCount" Type="int" Nullable="false" />
-          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="UnıtInStock" Type="int" />
+          <Property Name="StartGivenMemberCount" Type="int" />
+          <Property Name="AddedDate" Type="datetime" />
           <Property Name="ModifiedDate" Type="datetime" />
           <Property Name="Category_Id" Type="int" />
-          <Property Name="UserBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Project">
           <Key>
@@ -235,25 +237,13 @@
           <End Role="Members" Type="Self.Members" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Adresses" Type="Self.Adresses" Multiplicity="*" />
+          <End Role="Address" Type="Self.Address" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Members">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="Adresses">
+            <Dependent Role="Address">
               <PropertyRef Name="Member_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Categories_Categories">
-          <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
-          <End Role="Categories1" Type="Self.Categories" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Categories">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Categories1">
-              <PropertyRef Name="ParentID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -360,7 +350,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_OrderDetails_Orders">
-          <End Role="Orders" Type="Self.Orders" Multiplicity="1">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
           <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
@@ -374,7 +364,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_OrderDetails_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="1" />
+          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
           <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Products">
@@ -386,14 +376,26 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Orders_Adresses">
-          <End Role="Adresses" Type="Self.Adresses" Multiplicity="1" />
+          <End Role="Address" Type="Self.Address" Multiplicity="1" />
           <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Adresses">
+            <Principal Role="Address">
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Orders">
               <PropertyRef Name="Address_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_HomeRooms">
+          <End Role="HomeRooms" Type="Self.HomeRooms" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HomeRooms">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="HomeRoom_Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -408,6 +410,30 @@
             </Principal>
             <Dependent Role="Orders">
               <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Products">
+          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Product_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Project">
+          <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Project_Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -426,13 +452,11 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Products_Categories">
-          <End Role="Categories" Type="Self.Categories" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
+          <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
           <End Role="Products" Type="Self.Products" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Categories">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="Category_Id" />
             </Principal>
             <Dependent Role="Products">
               <PropertyRef Name="Category_Id" />
@@ -478,7 +502,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="SitedbModelStoreContainer">
-          <EntitySet Name="Adresses" EntityType="Self.Adresses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Exceptions" EntityType="Self.Exceptions" Schema="dbo" store:Type="Tables" />
@@ -500,11 +524,7 @@
           <EntitySet Name="Users_Roles" EntityType="Self.Users_Roles" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Adresses_Members" Association="Self.FK_Adresses_Members">
             <End Role="Members" EntitySet="Members" />
-            <End Role="Adresses" EntitySet="Adresses" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Categories_Categories" Association="Self.FK_Categories_Categories">
-            <End Role="Categories" EntitySet="Categories" />
-            <End Role="Categories1" EntitySet="Categories" />
+            <End Role="Address" EntitySet="Address" />
           </AssociationSet>
           <AssociationSet Name="FK_Comments_Members" Association="Self.FK_Comments_Members">
             <End Role="Members" EntitySet="Members" />
@@ -547,11 +567,23 @@
             <End Role="OrderDetails" EntitySet="OrderDetails" />
           </AssociationSet>
           <AssociationSet Name="FK_Orders_Adresses" Association="Self.FK_Orders_Adresses">
-            <End Role="Adresses" EntitySet="Adresses" />
+            <End Role="Address" EntitySet="Address" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_HomeRooms" Association="Self.FK_Orders_HomeRooms">
+            <End Role="HomeRooms" EntitySet="HomeRooms" />
             <End Role="Orders" EntitySet="Orders" />
           </AssociationSet>
           <AssociationSet Name="FK_Orders_Members" Association="Self.FK_Orders_Members">
             <End Role="Members" EntitySet="Members" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Products" Association="Self.FK_Orders_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Project" Association="Self.FK_Orders_Project">
+            <End Role="Project" EntitySet="Project" />
             <End Role="Orders" EntitySet="Orders" />
           </AssociationSet>
           <AssociationSet Name="FK_ProductDetails_Products" Association="Self.FK_ProductDetails_Products">
@@ -575,12 +607,11 @@
             <End Role="Users_Roles" EntitySet="Users_Roles" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SitedbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Adresses">
+        <EntityType Name="Address">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -591,22 +622,20 @@
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
           <Property Name="Member_Id" Type="Int32" />
           <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Members" Relationship="Self.FK_Adresses_Members" FromRole="Adresses" ToRole="Members" />
-          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Adresses" FromRole="Adresses" ToRole="Orders" />
+          <NavigationProperty Name="Members" Relationship="Self.FK_Adresses_Members" FromRole="Address" ToRole="Members" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Adresses" FromRole="Address" ToRole="Orders" />
         </EntityType>
         <EntityType Name="Categories">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Category_Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name_" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Category_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name_" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ParentID" Type="Int32" />
-          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="AddedDate" Type="DateTime" Precision="3" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="Categories1" Relationship="Self.FK_Categories_Categories" FromRole="Categories" ToRole="Categories1" />
-          <NavigationProperty Name="Categories2" Relationship="Self.FK_Categories_Categories" FromRole="Categories1" ToRole="Categories" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+          <NavigationProperty Name="Products" Relationship="SitedbModel.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
         </EntityType>
         <EntityType Name="Comments">
           <Key>
@@ -620,7 +649,7 @@
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
           <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Members" Relationship="Self.FK_Comments_Members" FromRole="Comments" ToRole="Members" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_Comments_Products" FromRole="Comments" ToRole="Products" />
+          <NavigationProperty Name="Products" Relationship="SitedbModel.FK_Comments_Products" FromRole="Comments" ToRole="Products" />
         </EntityType>
         <EntityType Name="Exceptions">
           <Key>
@@ -640,6 +669,7 @@
           <Property Name="ProjectID" Type="Int32" />
           <Property Name="Rooms" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Project" Relationship="Self.FK_HomeRooms_Project" FromRole="HomeRooms" ToRole="Project" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_HomeRooms" FromRole="HomeRooms" ToRole="Orders" />
         </EntityType>
         <EntityType Name="Localizations">
           <Key>
@@ -675,14 +705,14 @@
           <Property Name="AddedDate" Type="DateTime" Precision="3" />
           <Property Name="ModıfıedDate" Type="DateTime" Precision="3" />
           <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Adresses" Relationship="Self.FK_Adresses_Members" FromRole="Members" ToRole="Adresses" />
+          <NavigationProperty Name="Address" Relationship="Self.FK_Adresses_Members" FromRole="Members" ToRole="Address" />
           <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Members" FromRole="Members" ToRole="Comments" />
           <NavigationProperty Name="Messages_" Relationship="Self.FK_Messages_Members" FromRole="Members" ToRole="Messages_" />
           <NavigationProperty Name="Messages_1" Relationship="Self.FK_Messages_Members1" FromRole="Members" ToRole="Messages_" />
           <NavigationProperty Name="MessagesReplies" Relationship="Self.FK_MessagesReplies_Members" FromRole="Members" ToRole="MessagesReplies" />
           <NavigationProperty Name="MessagesReplies1" Relationship="Self.FK_MessagesReplies_Members1" FromRole="Members" ToRole="MessagesReplies" />
-          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Members" FromRole="Members" ToRole="Orders" />
           <NavigationProperty Name="Project" Relationship="Self.FK_Project_Members" FromRole="Members" ToRole="Project" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Members" FromRole="Members" ToRole="Orders" />
         </EntityType>
         <EntityType Name="Messages_">
           <Key>
@@ -730,33 +760,16 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Product_Id" Type="Int32" Nullable="false" />
-          <Property Name="Price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
-          <Property Name="Quantity" Type="Int32" Nullable="false" />
-          <Property Name="Discount" Type="Byte" Nullable="false" />
-          <Property Name="Order_Id" Type="Int32" Nullable="false" />
-          <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Product_Id" Type="Int32" />
+          <Property Name="Price" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Discount" Type="Byte" />
+          <Property Name="Order_Id" Type="Int32" />
+          <Property Name="AddedDate" Type="DateTime" Precision="3" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Orders" Relationship="Self.FK_OrderDetails_Orders" FromRole="OrderDetails" ToRole="Orders" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_OrderDetails_Products" FromRole="OrderDetails" ToRole="Products" />
-        </EntityType>
-        <EntityType Name="Orders">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Number" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Member_Id" Type="Int32" Nullable="false" />
-          <Property Name="Address_Id" Type="Int32" Nullable="false" />
-          <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-          <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Adresses" Relationship="Self.FK_Orders_Adresses" FromRole="Orders" ToRole="Adresses" />
-          <NavigationProperty Name="Members" Relationship="Self.FK_Orders_Members" FromRole="Orders" ToRole="Members" />
-          <NavigationProperty Name="OrderDetails" Relationship="Self.FK_OrderDetails_Orders" FromRole="Orders" ToRole="OrderDetails" />
+          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_OrderDetails_Orders" FromRole="OrderDetails" ToRole="Orders" />
+          <NavigationProperty Name="Products" Relationship="SitedbModel.FK_OrderDetails_Products" FromRole="OrderDetails" ToRole="Products" />
         </EntityType>
         <EntityType Name="ProductDetails">
           <Key>
@@ -769,29 +782,7 @@
           <Property Name="Product_Tag" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Product_Id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_ProductDetails_Products" FromRole="ProductDetails" ToRole="Products" />
-        </EntityType>
-        <EntityType Name="Products">
-          <Key>
-            <PropertyRef Name="Product_Id" />
-          </Key>
-          <Property Name="Product_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
-          <Property Name="Price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
-          <Property Name="StartPoint" Type="Int32" Nullable="false" />
-          <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="IsContinued" Type="Boolean" />
-          <Property Name="UnıtInStock" Type="Int32" Nullable="false" />
-          <Property Name="StartGivenMemberCount" Type="Int32" Nullable="false" />
-          <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-          <Property Name="Category_Id" Type="Int32" />
-          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Categories" Relationship="Self.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
-          <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Products" FromRole="Products" ToRole="Comments" />
-          <NavigationProperty Name="OrderDetails" Relationship="Self.FK_OrderDetails_Products" FromRole="Products" ToRole="OrderDetails" />
-          <NavigationProperty Name="ProductDetails" Relationship="Self.FK_ProductDetails_Products" FromRole="Products" ToRole="ProductDetails" />
+          <NavigationProperty Name="Products" Relationship="SitedbModel.FK_ProductDetails_Products" FromRole="ProductDetails" ToRole="Products" />
         </EntityType>
         <EntityType Name="Project">
           <Key>
@@ -804,6 +795,7 @@
           <Property Name="Member_Id" Type="Int32" Nullable="false" />
           <NavigationProperty Name="HomeRooms" Relationship="Self.FK_HomeRooms_Project" FromRole="Project" ToRole="HomeRooms" />
           <NavigationProperty Name="Members" Relationship="Self.FK_Project_Members" FromRole="Project" ToRole="Members" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Project" FromRole="Project" ToRole="Orders" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -848,51 +840,13 @@
           <End Role="Members" Type="Self.Members" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Adresses" Type="Self.Adresses" Multiplicity="*" />
+          <End Role="Address" Type="Self.Address" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Members">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="Adresses">
+            <Dependent Role="Address">
               <PropertyRef Name="Member_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Orders_Adresses">
-          <End Role="Adresses" Type="Self.Adresses" Multiplicity="1" />
-          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Adresses">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Orders">
-              <PropertyRef Name="Address_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Categories_Categories">
-          <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
-          <End Role="Categories1" Type="Self.Categories" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Categories">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Categories1">
-              <PropertyRef Name="ParentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Products_Categories">
-          <End Role="Categories" Type="Self.Categories" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Products" Type="Self.Products" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Categories">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Products">
-              <PropertyRef Name="Category_Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -907,20 +861,6 @@
             </Principal>
             <Dependent Role="Comments">
               <PropertyRef Name="Member_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Comments_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="Product_Id" />
-            </Principal>
-            <Dependent Role="Comments">
-              <PropertyRef Name="Product_Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -984,20 +924,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Orders_Members">
-          <End Role="Members" Type="Self.Members" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Members">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Orders">
-              <PropertyRef Name="Member_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Project_Members">
           <End Role="Members" Type="Self.Members" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -1026,46 +952,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_OrderDetails_Orders">
-          <End Role="Orders" Type="Self.Orders" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Orders">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="OrderDetails">
-              <PropertyRef Name="Order_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_OrderDetails_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="1" />
-          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="Product_Id" />
-            </Principal>
-            <Dependent Role="OrderDetails">
-              <PropertyRef Name="Product_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_ProductDetails_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="ProductDetails" Type="Self.ProductDetails" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="Product_Id" />
-            </Principal>
-            <Dependent Role="ProductDetails">
-              <PropertyRef Name="Product_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Users_Roles_Role">
           <End Role="Role" Type="Self.Role" Multiplicity="1" />
           <End Role="Users_Roles" Type="Self.Users_Roles" Multiplicity="*" />
@@ -1091,7 +977,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="SitedbContext" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Adresses" EntityType="Self.Adresses" />
+          <EntitySet Name="Address" EntityType="Self.Address" />
           <EntitySet Name="Categories" EntityType="Self.Categories" />
           <EntitySet Name="Comments" EntityType="Self.Comments" />
           <EntitySet Name="Exceptions" EntityType="Self.Exceptions" />
@@ -1103,9 +989,7 @@
           <EntitySet Name="MessagesReplies" EntityType="Self.MessagesReplies" />
           <EntitySet Name="Options" EntityType="Self.Options" />
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" />
-          <EntitySet Name="Orders" EntityType="Self.Orders" />
           <EntitySet Name="ProductDetails" EntityType="Self.ProductDetails" />
-          <EntitySet Name="Products" EntityType="Self.Products" />
           <EntitySet Name="Project" EntityType="Self.Project" />
           <EntitySet Name="Role" EntityType="Self.Role" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
@@ -1113,26 +997,10 @@
           <EntitySet Name="Users_Roles" EntityType="Self.Users_Roles" />
           <AssociationSet Name="FK_Adresses_Members" Association="Self.FK_Adresses_Members">
             <End Role="Members" EntitySet="Members" />
-            <End Role="Adresses" EntitySet="Adresses" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Orders_Adresses" Association="Self.FK_Orders_Adresses">
-            <End Role="Adresses" EntitySet="Adresses" />
-            <End Role="Orders" EntitySet="Orders" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Categories_Categories" Association="Self.FK_Categories_Categories">
-            <End Role="Categories" EntitySet="Categories" />
-            <End Role="Categories1" EntitySet="Categories" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
-            <End Role="Categories" EntitySet="Categories" />
-            <End Role="Products" EntitySet="Products" />
+            <End Role="Address" EntitySet="Address" />
           </AssociationSet>
           <AssociationSet Name="FK_Comments_Members" Association="Self.FK_Comments_Members">
             <End Role="Members" EntitySet="Members" />
-            <End Role="Comments" EntitySet="Comments" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Comments_Products" Association="Self.FK_Comments_Products">
-            <End Role="Products" EntitySet="Products" />
             <End Role="Comments" EntitySet="Comments" />
           </AssociationSet>
           <AssociationSet Name="FK_HomeRooms_Project" Association="Self.FK_HomeRooms_Project">
@@ -1155,10 +1023,6 @@
             <End Role="Members" EntitySet="Members" />
             <End Role="MessagesReplies" EntitySet="MessagesReplies" />
           </AssociationSet>
-          <AssociationSet Name="FK_Orders_Members" Association="Self.FK_Orders_Members">
-            <End Role="Members" EntitySet="Members" />
-            <End Role="Orders" EntitySet="Orders" />
-          </AssociationSet>
           <AssociationSet Name="FK_Project_Members" Association="Self.FK_Project_Members">
             <End Role="Members" EntitySet="Members" />
             <End Role="Project" EntitySet="Project" />
@@ -1166,18 +1030,6 @@
           <AssociationSet Name="FK_MessagesReplies_Messages" Association="Self.FK_MessagesReplies_Messages">
             <End Role="Messages_" EntitySet="Messages_" />
             <End Role="MessagesReplies" EntitySet="MessagesReplies" />
-          </AssociationSet>
-          <AssociationSet Name="FK_OrderDetails_Orders" Association="Self.FK_OrderDetails_Orders">
-            <End Role="Orders" EntitySet="Orders" />
-            <End Role="OrderDetails" EntitySet="OrderDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK_OrderDetails_Products" Association="Self.FK_OrderDetails_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="OrderDetails" EntitySet="OrderDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ProductDetails_Products" Association="Self.FK_ProductDetails_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductDetails" EntitySet="ProductDetails" />
           </AssociationSet>
           <AssociationSet Name="FK_Users_Roles_Role" Association="Self.FK_Users_Roles_Role">
             <End Role="Role" EntitySet="Role" />
@@ -1187,16 +1039,231 @@
             <End Role="Users" EntitySet="Users" />
             <End Role="Users_Roles" EntitySet="Users_Roles" />
           </AssociationSet>
-        </EntityContainer>
-      </Schema>
+          <EntitySet Name="Orders" EntityType="SitedbModel.Orders" />
+          <AssociationSet Name="FK_Orders_Adresses" Association="SitedbModel.FK_Orders_Adresses">
+            <End Role="Address" EntitySet="Address" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_HomeRooms" Association="SitedbModel.FK_Orders_HomeRooms">
+            <End Role="HomeRooms" EntitySet="HomeRooms" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Members" Association="SitedbModel.FK_Orders_Members">
+            <End Role="Members" EntitySet="Members" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetails_Orders" Association="SitedbModel.FK_OrderDetails_Orders">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Project" Association="SitedbModel.FK_Orders_Project">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <EntitySet Name="Products" EntityType="SitedbModel.Products" />
+          <AssociationSet Name="FK_Products_Categories" Association="SitedbModel.FK_Products_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comments_Products" Association="SitedbModel.FK_Comments_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetails_Products" Association="SitedbModel.FK_OrderDetails_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Products" Association="SitedbModel.FK_Orders_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductDetails_Products" Association="SitedbModel.FK_ProductDetails_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductDetails" EntitySet="ProductDetails" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Member_Id" Type="Int32" Nullable="false" />
+          <Property Name="Address_Id" Type="Int32" Nullable="false" />
+          <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="MemberDescription" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Product_Id" Type="Int32" />
+          <Property Name="Project_Id" Type="Int32" />
+          <Property Name="HomeRoom_Id" Type="Int32" />
+          <Property Name="UserBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Address" Relationship="SitedbModel.FK_Orders_Adresses" FromRole="Orders" ToRole="Address" />
+          <NavigationProperty Name="HomeRooms" Relationship="SitedbModel.FK_Orders_HomeRooms" FromRole="Orders" ToRole="HomeRooms" />
+          <NavigationProperty Name="Members" Relationship="SitedbModel.FK_Orders_Members" FromRole="Orders" ToRole="Members" />
+          <NavigationProperty Name="OrderDetails" Relationship="SitedbModel.FK_OrderDetails_Orders" FromRole="Orders" ToRole="OrderDetails" />
+          <NavigationProperty Name="Project" Relationship="SitedbModel.FK_Orders_Project" FromRole="Orders" ToRole="Project" />
+          <NavigationProperty Name="Products" Relationship="SitedbModel.FK_Orders_Products" FromRole="Orders" ToRole="Products" />
+        </EntityType>
+        <Association Name="FK_Orders_Adresses">
+          <End Type="SitedbModel.Address" Role="Address" Multiplicity="1" />
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Address_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_HomeRooms">
+          <End Type="SitedbModel.HomeRooms" Role="HomeRooms" Multiplicity="0..1" />
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HomeRooms">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="HomeRoom_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Members">
+          <End Type="SitedbModel.Members" Role="Members" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Members">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetails_Orders">
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SitedbModel.OrderDetails" Role="OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="Order_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Project">
+          <End Type="SitedbModel.Project" Role="Project" Multiplicity="0..1" />
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Project_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Product_Id" />
+          </Key>
+          <Property Name="Product_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="StartPoint" Type="Int32" />
+          <Property Name="ImageName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="IsContinued" Type="Boolean" />
+          <Property Name="UnıtInStock" Type="Int32" />
+          <Property Name="StartGivenMemberCount" Type="Int32" />
+          <Property Name="AddedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="Category_Id" Type="Int32" />
+          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Categories" Relationship="SitedbModel.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
+          <NavigationProperty Name="Comments" Relationship="SitedbModel.FK_Comments_Products" FromRole="Products" ToRole="Comments" />
+          <NavigationProperty Name="OrderDetails" Relationship="SitedbModel.FK_OrderDetails_Products" FromRole="Products" ToRole="OrderDetails" />
+          <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Products" FromRole="Products" ToRole="Orders" />
+          <NavigationProperty Name="ProductDetails" Relationship="SitedbModel.FK_ProductDetails_Products" FromRole="Products" ToRole="ProductDetails" />
+        </EntityType>
+        <Association Name="FK_Products_Categories">
+          <End Type="SitedbModel.Categories" Role="Categories" Multiplicity="0..1" />
+          <End Type="SitedbModel.Products" Role="Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Category_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Comments_Products">
+          <End Type="SitedbModel.Products" Role="Products" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SitedbModel.Comments" Role="Comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="Product_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetails_Products">
+          <End Type="SitedbModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="SitedbModel.OrderDetails" Role="OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="Product_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Products">
+          <End Type="SitedbModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="SitedbModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Product_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductDetails_Products">
+          <End Type="SitedbModel.Products" Role="Products" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SitedbModel.ProductDetails" Role="ProductDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_Id" />
+            </Principal>
+            <Dependent Role="ProductDetails">
+              <PropertyRef Name="Product_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="SitedbModelStoreContainer" CdmEntityContainer="SitedbContext">
-          <EntitySetMapping Name="Adresses">
-            <EntityTypeMapping TypeName="SitedbModel.Adresses">
-              <MappingFragment StoreEntitySet="Adresses">
+          <EntitySetMapping Name="Address">
+            <EntityTypeMapping TypeName="SitedbModel.Address">
+              <MappingFragment StoreEntitySet="Address">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
@@ -1210,7 +1277,7 @@
           <EntitySetMapping Name="Categories">
             <EntityTypeMapping TypeName="SitedbModel.Categories">
               <MappingFragment StoreEntitySet="Categories">
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
                 <ScalarProperty Name="Name_" ColumnName="Name_" />
                 <ScalarProperty Name="ParentID" ColumnName="ParentID" />
                 <ScalarProperty Name="UserBy" ColumnName="UserBy" />
@@ -1343,21 +1410,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Orders">
-            <EntityTypeMapping TypeName="SitedbModel.Orders">
-              <MappingFragment StoreEntitySet="Orders">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Number" ColumnName="Number" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
-                <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
-                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="ProductDetails">
             <EntityTypeMapping TypeName="SitedbModel.ProductDetails">
               <MappingFragment StoreEntitySet="ProductDetails">
@@ -1368,25 +1420,6 @@
                 <ScalarProperty Name="Product_Tag" ColumnName="Product_Tag" />
                 <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
                 <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Products">
-            <EntityTypeMapping TypeName="SitedbModel.Products">
-              <MappingFragment StoreEntitySet="Products">
-                <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
-                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
-                <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
-                <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
-                <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
-                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
-                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1437,6 +1470,42 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="User_Id" ColumnName="User_Id" />
                 <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="SitedbModel.Orders">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+                <ScalarProperty Name="HomeRoom_Id" ColumnName="HomeRoom_Id" />
+                <ScalarProperty Name="Project_Id" ColumnName="Project_Id" />
+                <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+                <ScalarProperty Name="MemberDescription" ColumnName="MemberDescription" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
+                <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="SitedbModel.Products">
+              <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+                <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
+                <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
+                <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -7,8 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Onixa.Entity
 {
     using System;
@@ -18,7 +16,6 @@ namespace Onixa.Entity
     {
         public string name { get; set; }
         public int principal_id { get; set; }
-        [Key]
         public int diagram_id { get; set; }
         public Nullable<int> version { get; set; }
         public byte[] definition { get; set; }

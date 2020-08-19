@@ -18,6 +18,7 @@ namespace Onixa.Entity
         public Project()
         {
             this.HomeRooms = new HashSet<HomeRooms>();
+            this.Orders = new HashSet<Orders>();
         }
     
         public int Id { get; set; }
@@ -29,5 +30,7 @@ namespace Onixa.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HomeRooms> HomeRooms { get; set; }
         public virtual Members Members { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

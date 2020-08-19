@@ -21,18 +21,23 @@ namespace Onixa.Entity
         }
     
         public int Id { get; set; }
-        public string Number { get; set; }
         public string Status { get; set; }
         public int Member_Id { get; set; }
         public int Address_Id { get; set; }
         public System.DateTime AddedDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
-        public string Description { get; set; }
+        public string MemberDescription { get; set; }
+        public Nullable<int> Product_Id { get; set; }
+        public Nullable<int> Project_Id { get; set; }
+        public Nullable<int> HomeRoom_Id { get; set; }
         public string UserBy { get; set; }
     
-        public virtual Adresses Adresses { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual HomeRooms HomeRooms { get; set; }
         public virtual Members Members { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+        public virtual Project Project { get; set; }
+        public virtual Products Products { get; set; }
     }
 }

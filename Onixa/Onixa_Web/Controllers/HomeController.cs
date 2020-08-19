@@ -7,7 +7,7 @@ using Onixa.Bussiness.Abstact;
 using Onixa.Bussiness.Concrete;
 using Onixa.DataAccess.Concrete.EntityFramework;
 using Onixa.Entity;
-using Onixa_Web;
+using Onixa_Web.Models;
 
 namespace Onixa_Web.Controllers
 {
@@ -22,6 +22,7 @@ namespace Onixa_Web.Controllers
         }
         public ActionResult Index()
         {
+         
             var model = new ProductListViewModel
             {
                 Products = _productService.GelAll()
@@ -63,7 +64,7 @@ namespace Onixa_Web.Controllers
         public string deneme()
         {
          AddressManager addressManager=new AddressManager(new EFAddressDal());
-         addressManager.Add(new Adresses
+         addressManager.Add(new Address
          {
             Name="sadd",
             Description = "sdfsdf",

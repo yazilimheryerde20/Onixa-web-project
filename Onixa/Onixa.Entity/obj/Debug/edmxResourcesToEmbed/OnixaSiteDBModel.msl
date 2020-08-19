@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="SitedbModelStoreContainer" CdmEntityContainer="SitedbContext">
-    <EntitySetMapping Name="Adresses">
-      <EntityTypeMapping TypeName="SitedbModel.Adresses">
-        <MappingFragment StoreEntitySet="Adresses">
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="SitedbModel.Address">
+        <MappingFragment StoreEntitySet="Address">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Description" ColumnName="Description" />
@@ -17,7 +17,7 @@
     <EntitySetMapping Name="Categories">
       <EntityTypeMapping TypeName="SitedbModel.Categories">
         <MappingFragment StoreEntitySet="Categories">
-          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
           <ScalarProperty Name="Name_" ColumnName="Name_" />
           <ScalarProperty Name="ParentID" ColumnName="ParentID" />
           <ScalarProperty Name="UserBy" ColumnName="UserBy" />
@@ -150,21 +150,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="SitedbModel.Orders">
-        <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Number" ColumnName="Number" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
-          <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
-          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="ProductDetails">
       <EntityTypeMapping TypeName="SitedbModel.ProductDetails">
         <MappingFragment StoreEntitySet="ProductDetails">
@@ -175,25 +160,6 @@
           <ScalarProperty Name="Product_Tag" ColumnName="Product_Tag" />
           <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
           <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="SitedbModel.Products">
-        <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
-          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
-          <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
-          <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
-          <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
-          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -244,6 +210,42 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="User_Id" ColumnName="User_Id" />
           <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="SitedbModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="HomeRoom_Id" ColumnName="HomeRoom_Id" />
+          <ScalarProperty Name="Project_Id" ColumnName="Project_Id" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+          <ScalarProperty Name="MemberDescription" ColumnName="MemberDescription" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
+          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="SitedbModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
+          <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
+          <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

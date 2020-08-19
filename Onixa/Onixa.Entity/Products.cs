@@ -7,8 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Onixa.Entity
 {
     using System;
@@ -21,19 +19,20 @@ namespace Onixa.Entity
         {
             this.Comments = new HashSet<Comments>();
             this.OrderDetails = new HashSet<OrderDetails>();
+            this.Orders = new HashSet<Orders>();
             this.ProductDetails = new HashSet<ProductDetails>();
         }
-        [Key]
+    
         public int Product_Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public decimal Price { get; set; }
-        public int StartPoint { get; set; }
+        public Nullable<decimal> Price { get; set; }
+        public Nullable<int> StartPoint { get; set; }
         public string ImageName { get; set; }
         public Nullable<bool> IsContinued { get; set; }
-        public int UnıtInStock { get; set; }
-        public int StartGivenMemberCount { get; set; }
-        public System.DateTime AddedDate { get; set; }
+        public Nullable<int> UnıtInStock { get; set; }
+        public Nullable<int> StartGivenMemberCount { get; set; }
+        public Nullable<System.DateTime> AddedDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
         public Nullable<int> Category_Id { get; set; }
         public string UserBy { get; set; }
@@ -43,6 +42,8 @@ namespace Onixa.Entity
         public virtual ICollection<Comments> Comments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Orders> Orders { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductDetails> ProductDetails { get; set; }
     }

@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adresses.cs">
+    <Compile Include="Address.cs">
       <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Categories.cs">

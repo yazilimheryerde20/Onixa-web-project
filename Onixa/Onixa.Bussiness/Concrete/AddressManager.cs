@@ -18,27 +18,27 @@ namespace Onixa.Bussiness.Concrete
             _addressDal = addressDal;
         }
         
-        public Adresses Add(Adresses address)
+        public Address Add(Address address)
         {
             return _addressDal.Add(address);
         }
 
-        public void Delete(Adresses adresses)
+        public void Delete(Address adresses)
         {
             throw new NotImplementedException();
         }
 
-        public List<Adresses> GelAll()
+        public List<Address> GelAll()
         {
             throw new NotImplementedException();
         }
 
-        public Adresses GetById(int id)
+        public Address GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Adresses Update(Adresses address)
+        public Address Update(Address address)
         {
             throw new NotImplementedException();
         }

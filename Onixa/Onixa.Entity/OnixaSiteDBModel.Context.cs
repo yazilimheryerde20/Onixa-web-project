@@ -22,10 +22,10 @@ namespace Onixa.Entity
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //throw new UnintentionalCodeFirstException();
+            throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Adresses> Adresses { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Comments> Comments { get; set; }
         public virtual DbSet<Exceptions> Exceptions { get; set; }
@@ -37,13 +37,13 @@ namespace Onixa.Entity
         public virtual DbSet<MessagesReplies> MessagesReplies { get; set; }
         public virtual DbSet<Options> Options { get; set; }
         public virtual DbSet<OrderDetails> OrderDetails { get; set; }
-        public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<ProductDetails> ProductDetails { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Project> Project { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Users_Roles> Users_Roles { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<Products> Products { get; set; }
     }
 }

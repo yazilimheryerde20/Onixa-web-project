@@ -29,6 +29,7 @@ namespace Onixa.Bussiness.Concrete
 
         public List<Products> GelAll()
         {
+            
             return _productDal.GetAllList();
         }
 

@@ -14,10 +14,18 @@ namespace Onixa.Entity
     
     public partial class HomeRooms
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public HomeRooms()
+        {
+            this.Orders = new HashSet<Orders>();
+        }
+    
         public int Id { get; set; }
         public Nullable<int> ProjectID { get; set; }
         public string Rooms { get; set; }
     
         public virtual Project Project { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

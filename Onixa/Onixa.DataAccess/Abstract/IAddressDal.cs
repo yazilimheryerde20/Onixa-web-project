@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Onixa.DataAccess.Abstract
 {
-    public interface IAddressDal:IEntityRepository<Adresses>
+    public interface IAddressDal:IEntityRepository<Address>
     {
     }
 }

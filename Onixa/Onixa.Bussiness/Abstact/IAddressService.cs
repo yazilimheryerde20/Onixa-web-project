@@ -9,10 +9,10 @@ namespace Onixa.Bussiness.Abstact
 {
   public  interface IAddressService
   {
-      List<Adresses> GelAll();
-      Adresses GetById(int id);
-      Adresses Add(Adresses address);
-      Adresses Update(Adresses address);
-      void Delete(Adresses adresses);
+      List<Address> GelAll();
+      Address GetById(int id);
+      Address Add(Address address);
+      Address Update(Address address);
+      void Delete(Address address);
   }
 }
