@@ -4,36 +4,34 @@
 }
 
 
-    <style>
+<style>
 
-    
 
-        /* these styles are for the demo, but are not required for the plugin */
-        .zoom {
-            display: inline-block;
-            position: relative;
+
+    /* these styles are for the demo, but are not required for the plugin */
+    .zoom {
+        display: inline-block;
+        position: relative;
+    }
+
+
+
+        .zoom img {
+            display: block;
         }
 
-          
-
-            .zoom img {
-                display: block;
+            .zoom img::selection {
+                background-color: transparent;
             }
-
-                .zoom img::selection {
-                    background-color: transparent;
-                }
-
-      
-    </style>
+</style>
 
 
-<div class="container">           
+<div class="container">
     <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li><a href="#">Private</a></li>
         <li><a href="#">Pictures</a></li>
-        <li class="active">Vacation</li>        
+        <li class="active">Vacation</li>
     </ul>
 </div>
 <div class="product_image_area section_padding">
@@ -45,78 +43,85 @@
                         @for (int i = 0; i < 5; i++)
                         {
                             <div data-thumb="../img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg" class="yakinlastir">
-                                <img src="~/img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg"/>
+                                <img src="~/img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg" />
                             </div>
                         }
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="s_product_text">
-                    <h3>Ürün Başlığı Uzun Şekilde yazılmak istenirse bu şekil görüntülenecektir</h3>
-                    <div class="fiyat">
-                        <span class="fiyat">400₺</span><span class="kdv">+kdv dahildir</span>
-                    </div>
-                    
-                        
-                    
-                    
-                    <!--DETAYLAR!-->
+                    <h3>Faded SkyBlu Denim Jeans</h3>
                     <ul class="list">
-                        <li>
-                            <span>PLATFORM: </span>3dsMax2013+obj
-                        </li>
-                        <li>
-                            <span>RENDER: </span>Corona
-                        </li>
-                        <li>
-                            <span>SIZE: </span>69 MB
-                        </li>
-                        <li>
-                            <span>DATE: </span>2020.07.15 21.56
-                        </li>
-                        <li>
-                            <span>FORMFACTOR: </span>Rectangle
-                        </li>
-                        <li>
-                            <span>STYLE:</span>Modern
-                        </li>
-                        <li>
-                            <span>MATERNAL:</span>Fabric
-                        </li>
-                        <li>
-                            <span>COLOR:</span>In Stock
-                        </li>
-                        <li>
-                            <span>SATICI: </span>Onixa
-                        </li>
+                        <!--<li>
+                            <span class="fiyat" >₺400</span>
+                            <span class="kdv">+kdv dahildir</span>
+                        </li>-->
+                        <!--DETAYLAR!-->
+                        <br/>
+                        <br/>
+                        <ul class="list">
+                            <!--<li>
+                                <span>PLATFORM</span> :  <a href=></a>  3dsMax2013+obj</a>
+                            </li>-->
+                            <li>
 
+                                <!--<span>RENDER:</span>Corona
+                                </li>
+                                <li>
+                                    <span>SIZE:</span>69 MB
+                                </li>
+                                <li>
+                                    <span>DATE:</span>2020.07.15 21.56
+                                </li>
+                                <li>
+                                    <span>FORMFACTOR:</span>Rectangle
+                                </li>
+                                <li>-->
+                                <span>STYLE: </span>Modern
+                            </li>
+                            <li>
+                                <!--<span>MATERNAL:</span>Fabric
+                                </li>
+                                <li>-->
+                                <span>COLOR: </span>In Stock
+                            </li>
+                            <!-- <li>
+                                <span>SATICI:</span>Onixa
+                            </li>-->
+                        </ul>
                     </ul>
-                    <form>
-                        <div class="input-group">
-                            <span class="input-group-addon">Oda:</span>
-                            <input id="msg" type="ODA" class="form-control" name="msg" placeholder="">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon">Proje:</span>
-                            <select class="nice-select wide small">
-                                <option>ERKİN İNŞAAT</option>
-                                <option>MATRAK İNŞAAT</option>
-                                <option>PROJE 5</option>
-
-                            </select>
-                        </div>
-                    </form>
-                    <br />
+                    <br/>
                     <!--DETAYLAR FİNİSH!-->
-                    <h4>AÇIKLAMA:</h4>
+                    <h4>Ürün Açıklaması:</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
+                    <br/>
                     <div class="card_area">
+
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-addon">Oda:</span>
+                                <input id="msg" type="ODA" class="form-control" name="msg" placeholder="">
+                            </div>
+                            <br />
+                            <h4>Not Ekle:</h4>
+                            <textarea cols="60" rows="5" class="form-control" placeholder="Bir not eklemek isterseniz yazın..."></textarea>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon">Proje:</span>
+                                <select class="nice-select wide small">
+                                    <option>ERKİN İNŞAAT</option>
+                                    <option>MATRAK İNŞAAT</option>
+                                    <option>PROJE 5</option>
+
+                                </select>
+                            </div>
+                        </form>
+                        <br/>
                         <!--<div class="product_count" style="width: fit-content;">
         <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
         <input class="input-number" type="text" value="1" min="0" max="10">
@@ -128,10 +133,17 @@
                             @*<button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>*@
                         </div>
                         @*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>*@
-                        
-                       
+
+
 
                         @*<div style="margin-top: 10px;"></div> <a href="#" class="btn_3">Sepete ekle</a>*@
+
+
+                    </div>
+                    
+                    <br />
+                    <div class="">
+                        
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog modal-lg">
@@ -151,13 +163,14 @@
                         </div>
                         <!-- /Modal -->
                     </div>
-                       
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <section class="product_description_area">
     <div class="container">
@@ -168,7 +181,7 @@
                         <div class="comment_list">
                             <div class="review_item">
                                 <div class="media">
-                                    
+
                                     <div class="media-body">
                                         <h4>Blake Ruiz</h4>
                                         <h5>12th Feb, 2017 at 05:56 pm</h5>
@@ -209,9 +222,9 @@
                                     <button type="submit" value="submit" class="btn_3">
                                         Paylaş
                                     </button>
-                                   
+
                                 </div>
-                               
+
                             </form>
                         </div>
                     </div>
@@ -222,14 +235,14 @@
 </section>
 @section scripts{
     <script type="text/javascript">
-        (function($) {
-            $(document).ready(function(){
+        (function ($) {
+            $(document).ready(function () {
                 $('.yakinlastir').zoom();
-                     
+
             });
-           
-            
+
+
         })(jQuery);
-       
+
     </script>
 }
