@@ -18,6 +18,7 @@ namespace Onixa.Entity
         public SitedbContext()
             : base("name=SitedbContext")
         {
+            Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -26,7 +27,6 @@ namespace Onixa.Entity
         }
     
         public virtual DbSet<Address> Address { get; set; }
-        public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Comments> Comments { get; set; }
         public virtual DbSet<Exceptions> Exceptions { get; set; }
         public virtual DbSet<HomeRooms> HomeRooms { get; set; }
@@ -45,5 +45,6 @@ namespace Onixa.Entity
         public virtual DbSet<Users_Roles> Users_Roles { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Categories> Categories { get; set; }
     }
 }

@@ -11,15 +11,16 @@ using Onixa_Web.Models;
 
 namespace Onixa_Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        // GET: Home
         private IProductService _productService;
-
-        public HomeController(IProductService productService)
+        public HomeController(IProductService productService, ICategoryService categoryService) : base(categoryService)
         {
             _productService = productService;
         }
+
+        // GET: Home
+
         public ActionResult Index()
         {
          
@@ -61,17 +62,17 @@ namespace Onixa_Web.Controllers
             return View();
         }
 
-        public string deneme()
-        {
-         AddressManager addressManager=new AddressManager(new EFAddressDal());
-         addressManager.Add(new Address
-         {
-            Name="sadd",
-            Description = "sdfsdf",
-            Member_Id=1,
-            UserBy = "fgfgf"
-         });
-            return "sada";
-        }
+        //public string deneme()
+        //{
+        // AddressManager addressManager=new AddressManager(new EFAddressDal());
+        // addressManager.Add(new Address
+        // {
+        //    Name="sadd",
+        //    Description = "sdfsdf",
+        //    Member_Id=1,
+        //    UserBy = "fgfgf"
+        // });
+        //    return "sada";
+        //}
     }
 }

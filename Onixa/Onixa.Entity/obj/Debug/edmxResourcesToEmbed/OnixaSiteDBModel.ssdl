@@ -242,6 +242,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Categories_Categories">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Categories1" Type="Self.Categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Category_Id" />
+      </Principal>
+      <Dependent Role="Categories1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Comments_Members">
     <End Role="Members" Type="Self.Members" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -520,6 +532,10 @@
     <AssociationSet Name="FK_Adresses_Members" Association="Self.FK_Adresses_Members">
       <End Role="Members" EntitySet="Members" />
       <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Categories_Categories" Association="Self.FK_Categories_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Categories1" EntitySet="Categories" />
     </AssociationSet>
     <AssociationSet Name="FK_Comments_Members" Association="Self.FK_Comments_Members">
       <End Role="Members" EntitySet="Members" />

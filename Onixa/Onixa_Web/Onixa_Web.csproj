@@ -266,6 +266,7 @@
     <Content Include="fonts\themify.eot" />
     <Content Include="fonts\themify.ttf" />
     <Content Include="fonts\themify.woff" />
+    <Content Include="App_Code\_MenuHelper.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\cloud-zoom.js" />
     <Content Include="Scripts\common.js" />
@@ -448,6 +449,7 @@
     <Content Include="Theme\css\themify-icons.css" />
     <Content Include="Theme\css\toolbar.css" />
     <Content Include="Theme\css\Tracking Form Area css_Aranoz.css" />
+    <Content Include="Theme\Customer_information_mail.html" />
     <Content Include="Theme\fonts\Flaticon.svg" />
     <Content Include="Theme\fonts\fontawesome-webfont.svg" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.svg" />
@@ -655,10 +657,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryListViewModel.cs" />
     <Compile Include="Models\ProductListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -730,6 +734,7 @@
     <Content Include="Views\Home\SignUp.cshtml" />
     <Content Include="Views\Home\Basket.cshtml" />
     <Content Include="Views\Home\ForgotPassword.cshtml" />
+    <Content Include="Views\Shared\_MenuTopCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -739,6 +744,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Onixa.Bussiness\Onixa.Bussiness.csproj">

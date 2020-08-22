@@ -1,0 +1,38 @@
+﻿@using System.Web.UI.WebControls
+@model Onixa_Web.Models.CategoryListViewModel
+@{
+    int sayac = 0;
+}
+<div class="col-md-3">
+    @foreach (var item in Model.Categorieses)
+    {
+
+
+        if (item.ParentID == null)
+        {
+            <h4 class="dropdown-heading">@item.Name_</h4>
+        }
+        var altbaslik = Model.Categorieses.FindAll(x => x.ParentID == item.Category_Id);
+        if (altbaslik != null)
+        {
+            <ul class="dropdown-list">
+                @foreach (var downtitle in altbaslik)
+                {
+                    <li><a href="@Url.Action("index","Home")">@downtitle.Name_</a></li>
+                }
+
+            </ul>
+        }
+        sayac++;
+        if (sayac % 3 == 0)
+        {
+        @:</div>
+        @:<div class="col-md-3">
+            continue;
+        }
+
+
+    }
+
+
+</div>

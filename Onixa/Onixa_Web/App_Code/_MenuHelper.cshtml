@@ -1,0 +1,10 @@
+﻿@helper MenuRecursive(Onixa.Entity.Categories category)
+{
+    foreach (var item in category.Categories2.Name_)
+    {
+        <ul class="dropdown-list">
+            <li><a href="#">@item</a></li>
+        </ul>
+
+    }
+}

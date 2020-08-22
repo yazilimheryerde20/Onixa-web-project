@@ -6,7 +6,6 @@
     <edmx:Diagrams>
       <Diagram DiagramId="531caf33aebe4c2da942c1d61b82903f" Name="Diagram1">
         <EntityTypeShape EntityType="SitedbModel.Address" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SitedbModel.Categories" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Comments" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Exceptions" Width="1.5" PointX="9.75" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.HomeRooms" Width="1.5" PointX="5.25" PointY="17.5" IsExpanded="true" />
@@ -41,11 +40,13 @@
         <AssociationConnector Association="SitedbModel.FK_OrderDetails_Orders" />
         <AssociationConnector Association="SitedbModel.FK_Orders_Project" />
         <EntityTypeShape EntityType="SitedbModel.Products" Width="1.5" PointX="5.25" PointY="2" />
-        <AssociationConnector Association="SitedbModel.FK_Products_Categories" />
         <AssociationConnector Association="SitedbModel.FK_Comments_Products" />
         <AssociationConnector Association="SitedbModel.FK_OrderDetails_Products" />
         <AssociationConnector Association="SitedbModel.FK_Orders_Products" />
         <AssociationConnector Association="SitedbModel.FK_ProductDetails_Products" />
+        <EntityTypeShape EntityType="SitedbModel.Categories" Width="1.5" PointX="2.75" PointY="2.375" />
+        <AssociationConnector Association="SitedbModel.FK_Categories_Categories" />
+        <AssociationConnector Association="SitedbModel.FK_Products_Categories" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

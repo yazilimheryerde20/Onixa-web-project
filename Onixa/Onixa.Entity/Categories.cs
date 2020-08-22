@@ -17,6 +17,7 @@ namespace Onixa.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Categories()
         {
+            this.Categories1 = new HashSet<Categories>();
             this.Products = new HashSet<Products>();
         }
     
@@ -27,6 +28,9 @@ namespace Onixa.Entity
         public Nullable<System.DateTime> AddedDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Categories> Categories1 { get; set; }
+        public virtual Categories Categories2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Products> Products { get; set; }
     }

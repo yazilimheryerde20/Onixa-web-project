@@ -37,7 +37,10 @@ namespace Onixa.Core.DataAccess.EntityFramework
 
         public TEntity GetList(Expression<Func<TEntity, bool>> filter)
         {
-            throw new NotImplementedException();
+            using (var context=new TContext())
+            {
+                return context.Set<TEntity>().Where(filter).FirstOrDefault();
+            }
         }
 
         public TEntity Update(TEntity Entity)

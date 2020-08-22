@@ -22,6 +22,8 @@ namespace Onixa.Bussiness.DependencyResolvers.Ninject
             Bind<IAddressDal>().To<EFAddressDal>();
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
             Bind<IProductDal>().To<EFProductDal>();
+            Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
+            Bind<ICategoryDal>().To<EFCategoryDal>();
             //Nesne bindignleri buraya gelecek
             //Amaç; biri senden interface istiyorsa classını ver
             //Hem dal hem manager vermeyi unutma!

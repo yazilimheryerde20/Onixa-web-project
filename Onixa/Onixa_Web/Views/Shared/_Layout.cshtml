@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -124,7 +125,6 @@
             </div>
         </div>
         <!-- /Top Nav -->
-       
         <!-- nav-bottom -->
         <div id="nav-bottom">
             <div class="container">
@@ -135,116 +135,13 @@
                         <div class="dropdown">
                             <div class="dropdown-body">
                                 <div class="row">
-
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">FURNITURE</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Dressing table</a></li>
-                                            <li><a href="#">Hallway</a></li>
-                                            <li><a href="#">Rack</a></li>
-                                        </ul>
-                                        <h4 class="dropdown-heading">TECHNOLOGY</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">PC &amp; other electronics</a></li>
-                                            <li><a href="#">Household appliance</a></li>
-                                            <li><a href="#">TV</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">DECORATION</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Decorative plaster</a></li>
-                                            <li><a href="#">3D panel</a></li>
-                                            <li><a href="#">Curtain</a></li>
-
-                                        </ul>
-                                        <h4 class="dropdown-heading">LIGHTING</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Candelier</a></li>
-                                            <li><a href="#">Ceiling lamp</a></li>
-                                            <li><a href="#">Wall light</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">OTHER MODELS</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Wall light</a></li>
-                                            <li><a href="#">Windows</a></li>
-                                            <li><a href="#">Fireplace</a></li>
-
-                                        </ul>
-                                        <h4 class="dropdown-heading">TEXTURES</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Wood</a></li>
-                                            <li><a href="#">Floor coverings</a></li>
-                                            <li><a href="#">Wall covering</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">KITCHEN</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Tableware</a></li>
-                                            <li><a href="#">Kitchen</a></li>
-                                            <li><a href="#">Kitchen appliance</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">BATHROOM</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Wash basin</a></li>
-                                            <li><a href="#">Toilet and Bidet</a></li>
-                                            <li><a href="#">Bathtub</a></li>
-
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">CHILDROOM</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Full furniture set</a></li>
-                                            <li><a href="#">Bed</a></li>
-                                            <li><a href="#">Table + Chair</a></li>
-                                            <li><a href="#">Full furniture set</a></li>
-                                            <li><a href="#">Bed</a></li>
-                                            <li><a href="#">Table + Chair</a></li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">ARCHITECTURE</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">PC &amp; other electronics</a></li>
-                                            <li><a href="#">Household appliance</a></li>
-                                            <li><a href="#">TV</a></li>
-
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">SCRIPTS</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Scripts</a></li>
-
-
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h4 class="dropdown-heading">PLANTS</h4>
-                                        <ul class="dropdown-list">
-                                            <li><a href="#">Bouquet</a></li>
-                                            <li><a href="#">Indoor</a></li>
-                                            <li><a href="#">Fitowall</a></li>
-                                        </ul>
-                                    </div>
+                                    <!-- Top Menu -->
+                                    @Html.Partial("_MenuTopCategory", (Onixa_Web.Models.CategoryListViewModel)ViewBag.MenuCategories)
+                                    <!-- /Top Menu -->
                                 </div>
                             </div>
                         </div>
                     </li>
-
                     <li><a href="~/Home/Login">GİRİŞ <i class="fas fa-door-open"></i></a></li>
                     <li><a href="~/Home/SignUp">KAYIT OL <i class="fas fa-user-plus"></i></a></li>
                     <li class="has-dropdown">
@@ -266,9 +163,8 @@
             </div>
         </div>
         <!-- /nav-bottom -->
-        
         <!-- Aside Nav -->
-       
+
         <div id="nav-aside">
             <ul class="nav-aside-menu">
                 <li><a href="~/Home/Login">GİRİŞ <i class="fas fa-door-open"></i></a></li>
@@ -443,7 +339,7 @@
 
     <script src="~/Scripts/jquery-ui.min.js"></script>
 
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
     <!-- popper js -->
     <script src="~/Scripts/popper.min.js"></script>
 
@@ -486,7 +382,7 @@
     <script src="~/Scripts/swiper.min.js"></script>
     <script src="~/Scripts/masonry.pkgd.js"></script>
 
-<script src="~/Scripts/jquery.zoom.js"></script>
+    <script src="~/Scripts/jquery.zoom.js"></script>
 
 
 

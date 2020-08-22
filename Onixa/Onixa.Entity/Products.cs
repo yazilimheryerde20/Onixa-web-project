@@ -37,7 +37,6 @@ namespace Onixa.Entity
         public Nullable<int> Category_Id { get; set; }
         public string UserBy { get; set; }
     
-        public virtual Categories Categories { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comments> Comments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -46,5 +45,6 @@ namespace Onixa.Entity
         public virtual ICollection<Orders> Orders { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductDetails> ProductDetails { get; set; }
+        public virtual Categories Categories { get; set; }
     }
 }

@@ -55,8 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstact\IAddressService.cs" />
+    <Compile Include="Abstact\ICategoryService.cs" />
     <Compile Include="Abstact\IProductService.cs" />
     <Compile Include="Concrete\AddressManager.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

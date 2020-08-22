@@ -14,18 +14,6 @@
     <NavigationProperty Name="Members" Relationship="Self.FK_Adresses_Members" FromRole="Address" ToRole="Members" />
     <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Adresses" FromRole="Address" ToRole="Orders" />
   </EntityType>
-  <EntityType Name="Categories">
-    <Key>
-      <PropertyRef Name="Category_Id" />
-    </Key>
-    <Property Name="Category_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name_" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ParentID" Type="Int32" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="AddedDate" Type="DateTime" Precision="3" />
-    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-    <NavigationProperty Name="Products" Relationship="SitedbModel.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
-  </EntityType>
   <EntityType Name="Comments">
     <Key>
       <PropertyRef Name="Id" />
@@ -365,9 +353,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="SitedbContext" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="SitedbContext" annotation:LazyLoadingEnabled="true" a:TypeAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
     <EntitySet Name="Address" EntityType="Self.Address" />
-    <EntitySet Name="Categories" EntityType="Self.Categories" />
     <EntitySet Name="Comments" EntityType="Self.Comments" />
     <EntitySet Name="Exceptions" EntityType="Self.Exceptions" />
     <EntitySet Name="HomeRooms" EntityType="Self.HomeRooms" />
@@ -450,10 +437,6 @@
       <End Role="Orders" EntitySet="Orders" />
     </AssociationSet>
     <EntitySet Name="Products" EntityType="SitedbModel.Products" />
-    <AssociationSet Name="FK_Products_Categories" Association="SitedbModel.FK_Products_Categories">
-      <End Role="Categories" EntitySet="Categories" />
-      <End Role="Products" EntitySet="Products" />
-    </AssociationSet>
     <AssociationSet Name="FK_Comments_Products" Association="SitedbModel.FK_Comments_Products">
       <End Role="Products" EntitySet="Products" />
       <End Role="Comments" EntitySet="Comments" />
@@ -469,6 +452,15 @@
     <AssociationSet Name="FK_ProductDetails_Products" Association="SitedbModel.FK_ProductDetails_Products">
       <End Role="Products" EntitySet="Products" />
       <End Role="ProductDetails" EntitySet="ProductDetails" />
+    </AssociationSet>
+    <EntitySet Name="Categories" EntityType="SitedbModel.Categories" />
+    <AssociationSet Name="FK_Categories_Categories" Association="SitedbModel.FK_Categories_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Categories1" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Categories" Association="SitedbModel.FK_Products_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Orders">
@@ -574,24 +566,12 @@
     <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
     <Property Name="Category_Id" Type="Int32" />
     <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Categories" Relationship="SitedbModel.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
     <NavigationProperty Name="Comments" Relationship="SitedbModel.FK_Comments_Products" FromRole="Products" ToRole="Comments" />
     <NavigationProperty Name="OrderDetails" Relationship="SitedbModel.FK_OrderDetails_Products" FromRole="Products" ToRole="OrderDetails" />
     <NavigationProperty Name="Orders" Relationship="SitedbModel.FK_Orders_Products" FromRole="Products" ToRole="Orders" />
     <NavigationProperty Name="ProductDetails" Relationship="SitedbModel.FK_ProductDetails_Products" FromRole="Products" ToRole="ProductDetails" />
+    <NavigationProperty Name="Categories" Relationship="SitedbModel.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
   </EntityType>
-  <Association Name="FK_Products_Categories">
-    <End Type="SitedbModel.Categories" Role="Categories" Multiplicity="0..1" />
-    <End Type="SitedbModel.Products" Role="Products" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Categories">
-        <PropertyRef Name="Category_Id" />
-      </Principal>
-      <Dependent Role="Products">
-        <PropertyRef Name="Category_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Comments_Products">
     <End Type="SitedbModel.Products" Role="Products" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -641,6 +621,44 @@
       </Principal>
       <Dependent Role="ProductDetails">
         <PropertyRef Name="Product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Category_Id" />
+    </Key>
+    <Property Name="Category_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Categories1" Relationship="SitedbModel.FK_Categories_Categories" FromRole="Categories" ToRole="Categories1" />
+    <NavigationProperty Name="Categories2" Relationship="SitedbModel.FK_Categories_Categories" FromRole="Categories1" ToRole="Categories" />
+    <NavigationProperty Name="Products" Relationship="SitedbModel.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <Association Name="FK_Categories_Categories">
+    <End Type="SitedbModel.Categories" Role="Categories" Multiplicity="0..1" />
+    <End Type="SitedbModel.Categories" Role="Categories1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Category_Id" />
+      </Principal>
+      <Dependent Role="Categories1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Categories">
+    <End Type="SitedbModel.Categories" Role="Categories" Multiplicity="0..1" />
+    <End Type="SitedbModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Category_Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Category_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
