@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Onixa.Entity;
+using Onixa.Entity.ComplexTypes;
 
 namespace Onixa.Bussiness.Abstact
 {
@@ -13,7 +14,10 @@ namespace Onixa.Bussiness.Abstact
         List<Products> GetbyCategoryIdAll(int? id);
         List<Styles> GetAllStyles();
         Products GetByParentId(int id);
-        Products GetByCategoryId(int? id);
+       List<Productimages>  GetProductsImageNamesListbyProductId(int? id);
+        List<Productimages> GetProductimagesesAll();
+        List<ProductsLite> GetProductIndexList();
+        List<ProductsLite> GetProductIndexListbyCategoryID(int? id);
         Products Add(Products products);
         Products Update(Products products);
         void Delete(Products products);

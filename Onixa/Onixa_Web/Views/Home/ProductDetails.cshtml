@@ -41,20 +41,22 @@
             <div class="col-lg-7 col-xl-7">
                 <div class="product_slider_img zoom" style="position: relative; overflow: hidden;">
                     <div id="vertical">
-                        @for (int i = 0; i < 5; i++)
+                        @foreach (var resim in Model.Productimage.Select(x => x.Path))
                         {
-                            <div data-thumb="../img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg" class="yakinlastir">
-                                <img src="~/img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg" />
-                            </div>
-                        }
+                            <div data-thumb="@Url.Content("~/img/"+resim.ToString())" class="yakinlastir">
+                               <img src="~/img/@resim.ToString()" />
+                           </div>
+                       }
+
+
 
 
                     </div>
-                </div>
+                        </div>
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="s_product_text">
-                    <h3>@Model.Product.Name</h3>
+                    <h3>@Model.Productimage.Select(x=>x.Name).First()</h3>
                     <ul class="list">
                         <!--<li>
                             <span class="fiyat" >₺400</span>

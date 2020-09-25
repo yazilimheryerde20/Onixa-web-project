@@ -23,16 +23,18 @@ namespace Onixa_Web.Controllers
 
         public ActionResult Index(int? id)
         {
+             
             var model= new ProductListViewModel();
            
             if (id.HasValue)
             {
-                model.Products = _productService.GetbyCategoryIdAll(id);
+                model.ProductsLiteList = _productService.GetProductIndexListbyCategoryID(id);
+
             }
             else
             {
-               
-                model.Products = _productService.GetAll();
+
+                model.ProductsLiteList = _productService.GetProductIndexList();
             }
 
             model.Styleses = _productService.GetAllStyles();
@@ -52,7 +54,8 @@ namespace Onixa_Web.Controllers
             var model = new ProductListViewModel();
             if (id.HasValue)
             {
-                model.Product = _productService.GetByCategoryId(id);
+
+                model.Productimage = _productService.GetProductsImageNamesListbyProductId(id);
                 return View(model);
             }
             else

@@ -37,7 +37,7 @@ namespace Onixa.Entity
         public virtual Members Members { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetails> OrderDetails { get; set; }
-        public virtual Project Project { get; set; }
         public virtual Products Products { get; set; }
+        public virtual Project Project { get; set; }
     }
 }

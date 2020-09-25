@@ -13,15 +13,15 @@
                     <!-- /Filtre -->
                     <div id="shop-all" class="row">
                         <!-- Product Item #1 -->
-                        @foreach (var item in Model.Products)
+                        @foreach (var item in Model.ProductimageList)
                         {
-                            if (string.IsNullOrWhiteSpace(item.ImageName))
+                            if (string.IsNullOrWhiteSpace(item.Path))
                             {
-                                item.ImageName = "web_img/gorsele_erisilemiyor.JPG";
+                                item.Path = "web_img/gorsele_erisilemiyor.JPG";
                             }
                             <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
                                 <div class="product-img">
-                                    <img src="~/img/@item.ImageName" alt="product">
+                                    <img src="~/img/@item.Path" alt="product">
                                     @*<div class="product-sale">
                                             İNDİRİM
                                         </div>*@

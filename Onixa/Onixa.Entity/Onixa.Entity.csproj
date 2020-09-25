@@ -54,109 +54,114 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Categories.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Comments.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ComplexTypes\Productimages.cs" />
+    <Compile Include="ComplexTypes\ProductsLite.cs" />
     <Compile Include="Exceptions.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HomeRooms.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Localizations.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Logs.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Members.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MessagesReplies.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Messages_.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OnixaSiteDBModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OnixaSiteDBModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OnixaSiteDBModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OnixaSiteDBModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OnixaSiteDBModel.edmx</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Options.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="OrderDetails.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Orders.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductDetails.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsImageName.cs">
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Project.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SitedbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SitedbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SitedbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SitedbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SitedbModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Styles.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Users_Roles.cs">
-      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+      <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="OnixaSiteDBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>OnixaSiteDBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="OnixaSiteDBModel.edmx.diagram">
-      <DependentUpon>OnixaSiteDBModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="SitedbModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SitedbModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SitedbModel.edmx.diagram">
+      <DependentUpon>SitedbModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OnixaSiteDBModel.Context.tt">
+    <Content Include="SitedbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OnixaSiteDBModel.edmx</DependentUpon>
-      <LastGenOutput>OnixaSiteDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>SitedbModel.edmx</DependentUpon>
+      <LastGenOutput>SitedbModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="OnixaSiteDBModel.tt">
+    <Content Include="SitedbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OnixaSiteDBModel.edmx</DependentUpon>
-      <LastGenOutput>OnixaSiteDBModel.cs</LastGenOutput>
+      <DependentUpon>SitedbModel.edmx</DependentUpon>
+      <LastGenOutput>SitedbModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

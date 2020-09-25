@@ -13,21 +13,21 @@
                     <!-- /Filtre -->
                     <div id="shop-all" class="row">
                         <!-- Product Item #1 -->
-                        @foreach (var item in Model.Products)
+                        @foreach (var item in Model.ProductsLiteList)
                         {
-                            if (string.IsNullOrWhiteSpace(item.ImageName))
+                            if (string.IsNullOrWhiteSpace(item.MainImage))
                             {
-                                item.ImageName = "web_img/gorsele_erisilemiyor.JPG";
+                                item.MainImage = "web_img/gorsele_erisilemiyor.JPG";
                             }
                             <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
                                 <div class="product-img">
-                                    <img src="~/img/@item.ImageName" alt="product">
+                                    <img src="~/img/@item.MainImage" alt="product">
                                     @*<div class="product-sale">
                                             İNDİRİM
                                         </div>*@
                                     <div class="product-hover">
                                         <div class="product-cart">
-                                            <a class="btn btn-secondary btn-block" href="~/Home/ProductDetails/@item.Category_Id">Detaylar</a>
+                                            <a class="btn btn-secondary btn-block" href="~/Home/ProductDetails/@item.Product_Id">Detaylar</a>
                                             <a class="btn btn-secondary btn-block" href="~/Home/deneme">Sepete Ekle</a>
                                         </div>
                                     </div>

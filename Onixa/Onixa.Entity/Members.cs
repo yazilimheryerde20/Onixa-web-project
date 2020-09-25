@@ -23,8 +23,8 @@ namespace Onixa.Entity
             this.Messages_1 = new HashSet<Messages_>();
             this.MessagesReplies = new HashSet<MessagesReplies>();
             this.MessagesReplies1 = new HashSet<MessagesReplies>();
-            this.Project = new HashSet<Project>();
             this.Orders = new HashSet<Orders>();
+            this.Project = new HashSet<Project>();
         }
     
         public int Id { get; set; }
@@ -51,8 +51,8 @@ namespace Onixa.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MessagesReplies> MessagesReplies1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Project> Project { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Orders> Orders { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Project> Project { get; set; }
     }
 }

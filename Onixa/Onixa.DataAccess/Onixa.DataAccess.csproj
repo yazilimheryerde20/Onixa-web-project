@@ -66,6 +66,7 @@
     <Compile Include="Abstract\IOrderDetailDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Abstract\IProductDetailDal.cs" />
+    <Compile Include="Abstract\IProductsImageNameDal.cs" />
     <Compile Include="Abstract\IProjectDal.cs" />
     <Compile Include="Abstract\IRoleDal.cs" />
     <Compile Include="Abstract\IStyleDal.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Concrete\EntityFramework\EFOrderDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFProductDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFProductDetailDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFProductsImageNameDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFProjectDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFRoleDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFStyleDal.cs" />

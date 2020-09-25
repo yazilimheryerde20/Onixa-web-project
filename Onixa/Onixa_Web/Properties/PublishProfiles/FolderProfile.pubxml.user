@@ -19,7 +19,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/16/2020 20:38:56</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>09/05/2018 16:10:50</publishTime>
+      <publishTime>05/09/2018 16:10:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 11:48:56</publishTime>
@@ -28,13 +28,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/13/2017 03:01:30</publishTime>
     </File>
     <File Include="bin/Onixa.Bussiness.dll">
-      <publishTime>09/21/2020 18:15:49</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/Onixa.Bussiness.dll.config">
       <publishTime>08/19/2020 18:58:18</publishTime>
     </File>
     <File Include="bin/Onixa.Bussiness.pdb">
-      <publishTime>09/21/2020 18:15:49</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/Onixa.Core.dll">
       <publishTime>09/21/2020 18:15:48</publishTime>
@@ -46,28 +46,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/21/2020 18:15:48</publishTime>
     </File>
     <File Include="bin/Onixa.DataAccess.dll">
-      <publishTime>09/21/2020 18:15:49</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/Onixa.DataAccess.dll.config">
       <publishTime>08/18/2020 17:47:08</publishTime>
     </File>
     <File Include="bin/Onixa.DataAccess.pdb">
-      <publishTime>09/21/2020 18:15:49</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/Onixa.Entity.dll">
-      <publishTime>09/21/2020 18:15:48</publishTime>
+      <publishTime>09/23/2020 20:42:08</publishTime>
     </File>
     <File Include="bin/Onixa.Entity.dll.config">
-      <publishTime>08/19/2020 21:42:58</publishTime>
+      <publishTime>09/22/2020 21:28:42</publishTime>
     </File>
     <File Include="bin/Onixa.Entity.pdb">
-      <publishTime>09/21/2020 18:15:48</publishTime>
+      <publishTime>09/23/2020 20:42:08</publishTime>
     </File>
     <File Include="bin/Onixa_Web.dll">
-      <publishTime>09/21/2020 18:30:33</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/Onixa_Web.pdb">
-      <publishTime>09/21/2020 18:30:33</publishTime>
+      <publishTime>09/23/2020 20:42:09</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/27/2016 21:50:24</publishTime>
@@ -166,232 +166,232 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
-      <publishTime>08/02/2020 16:17:49</publishTime>
+      <publishTime>02/08/2020 16:17:49</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css.map">
-      <publishTime>08/02/2020 16:17:49</publishTime>
+      <publishTime>02/08/2020 16:17:49</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css">
-      <publishTime>08/02/2020 16:17:49</publishTime>
+      <publishTime>02/08/2020 16:17:49</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css.map">
-      <publishTime>08/02/2020 16:17:48</publishTime>
+      <publishTime>02/08/2020 16:17:48</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>08/02/2020 16:17:48</publishTime>
+      <publishTime>02/08/2020 16:17:48</publishTime>
     </File>
     <File Include="Content/bootstrap.css.map">
-      <publishTime>08/02/2020 16:17:48</publishTime>
+      <publishTime>02/08/2020 16:17:48</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>08/02/2020 16:17:48</publishTime>
+      <publishTime>02/08/2020 16:17:48</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css.map">
-      <publishTime>08/02/2020 16:17:48</publishTime>
+      <publishTime>02/08/2020 16:17:48</publishTime>
     </File>
     <File Include="Content/brands.css">
-      <publishTime>08/04/2020 11:09:36</publishTime>
+      <publishTime>04/08/2020 11:09:36</publishTime>
     </File>
     <File Include="Content/brands.min.css">
-      <publishTime>08/04/2020 11:09:36</publishTime>
+      <publishTime>04/08/2020 11:09:36</publishTime>
     </File>
     <File Include="Content/fontawesome-all.css">
-      <publishTime>08/04/2020 11:09:36</publishTime>
+      <publishTime>04/08/2020 11:09:36</publishTime>
     </File>
     <File Include="Content/fontawesome-all.min.css">
-      <publishTime>08/04/2020 11:09:35</publishTime>
+      <publishTime>04/08/2020 11:09:35</publishTime>
     </File>
     <File Include="Content/fontawesome.css">
-      <publishTime>08/04/2020 11:09:35</publishTime>
+      <publishTime>04/08/2020 11:09:35</publishTime>
     </File>
     <File Include="Content/fontawesome.min.css">
-      <publishTime>08/04/2020 11:09:35</publishTime>
+      <publishTime>04/08/2020 11:09:35</publishTime>
     </File>
     <File Include="Content/regular.css">
-      <publishTime>08/04/2020 11:09:35</publishTime>
+      <publishTime>04/08/2020 11:09:35</publishTime>
     </File>
     <File Include="Content/regular.min.css">
-      <publishTime>08/04/2020 11:09:34</publishTime>
+      <publishTime>04/08/2020 11:09:34</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>08/02/2020 17:09:15</publishTime>
+      <publishTime>02/08/2020 17:09:15</publishTime>
     </File>
     <File Include="Content/solid.css">
-      <publishTime>08/04/2020 11:09:34</publishTime>
+      <publishTime>04/08/2020 11:09:34</publishTime>
     </File>
     <File Include="Content/solid.min.css">
-      <publishTime>08/04/2020 11:09:34</publishTime>
+      <publishTime>04/08/2020 11:09:34</publishTime>
     </File>
     <File Include="Content/svg-with-js.css">
-      <publishTime>08/04/2020 11:09:34</publishTime>
+      <publishTime>04/08/2020 11:09:34</publishTime>
     </File>
     <File Include="Content/svg-with-js.min.css">
-      <publishTime>08/04/2020 11:09:34</publishTime>
+      <publishTime>04/08/2020 11:09:34</publishTime>
     </File>
     <File Include="Content/v4-shims.css">
-      <publishTime>08/04/2020 11:09:33</publishTime>
+      <publishTime>04/08/2020 11:09:33</publishTime>
     </File>
     <File Include="Content/v4-shims.min.css">
-      <publishTime>08/04/2020 11:09:33</publishTime>
+      <publishTime>04/08/2020 11:09:33</publishTime>
     </File>
     <File Include="css/Accordion_Divisima.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/all.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/animate.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/Animation_lookcare.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/aos.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/Asidestyle._Callie.css">
-      <publishTime>08/04/2020 11:31:11</publishTime>
+      <publishTime>04/08/2020 11:31:11</publishTime>
     </File>
     <File Include="css/BannerPartcss_Aranoz.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/Banner_Section_Divisima.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/blogmate.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/Blog_Partcss_Start.css">
-      <publishTime>08/02/2020 17:02:25</publishTime>
+      <publishTime>02/08/2020 17:02:25</publishTime>
     </File>
     <File Include="css/Card_Area_css2_Aranoz.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="css/card_inner.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Cart Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Cart page_Divisima.css">
       <publishTime>08/19/2020 10:58:24</publishTime>
     </File>
     <File Include="css/Category page_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/category_widget.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/CausesAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Checkout Page_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Client_Logo_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Common elements-Buttons_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/commoncssstart_Aranoz.css">
       <publishTime>08/20/2020 14:55:20</publishTime>
     </File>
     <File Include="css/confirmation.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Confirmationcss_Aranoz.css">
-      <publishTime>08/04/2020 11:31:11</publishTime>
+      <publishTime>04/08/2020 11:31:11</publishTime>
     </File>
     <File Include="css/contact banner_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/contact form_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Contact Page_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Contact Success and error Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/discount_sidebar_menu.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Extendcssstart_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Extend_css_start_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/fancybox.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Feature Product Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Features_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Features_Section_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/flaticon.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/flexslider.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/font-awesome.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/font-awesome.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/footer part css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/footer.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Footerstyle_Callie.css">
-      <publishTime>08/05/2020 09:52:50</publishTime>
+      <publishTime>05/08/2020 09:52:50</publishTime>
     </File>
     <File Include="css/footer_fonts.css">
-      <publishTime>08/06/2020 10:58:58</publishTime>
+      <publishTime>06/08/2020 10:58:58</publishTime>
     </File>
     <File Include="css/Footer_section_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Generalstyle_Callie.css">
       <publishTime>08/17/2020 21:28:09</publishTime>
     </File>
     <File Include="css/HeaderSection_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Helpercss_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/internal.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/jquery-ui.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/jquery.bxslider.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/jquery.mobile-menu.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/LatestBlogAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Latest_Blog_Areacss_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Latest_Product_Section_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/lightslider.min.css">
       <publishTime>09/21/2020 16:37:29</publishTime>
@@ -400,16 +400,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/17/2020 22:22:45</publishTime>
     </File>
     <File Include="css/magnific-popup.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/MainButtonAreacss_Aranoz.css">
       <publishTime>08/19/2020 22:53:36</publishTime>
     </File>
     <File Include="css/MenuPartStart_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Navigationstyle_Callie.css">
-      <publishTime>08/04/2020 10:40:14</publishTime>
+      <publishTime>04/08/2020 10:40:14</publishTime>
     </File>
     <File Include="css/nice-select.css">
       <publishTime>08/20/2020 14:55:20</publishTime>
@@ -417,155 +417,158 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="css/normalize_lookcare.css">
       <publishTime>08/17/2020 18:26:03</publishTime>
     </File>
+    <File Include="css/order_page_2.css">
+      <publishTime>09/21/2020 16:37:29</publishTime>
+    </File>
     <File Include="css/Other Pages_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/owl.carousel.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="css/owl.carousel.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/owl.theme.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/PageHeaderstyle_Callie.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/PostPagestyle_Callie.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Preloder_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/price_rangs.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/product list css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/product list-our offer_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Product page_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Product Sidebar Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/products.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Product_Filter_Section_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Radion_btn-login_part-issideouther-product_Aranoz.css">
       <publishTime>08/18/2020 12:55:31</publishTime>
     </File>
     <File Include="css/Responsivestyle_Callie.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Responsive_Divisima.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/revslider.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/service_part css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/shop.css">
       <publishTime>08/19/2020 22:53:36</publishTime>
     </File>
     <File Include="css/simple-line-icons.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/single blog post=single_blog_post .single_blog .single_appartment_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Single Product Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/site-icons.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/site.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/slick-theme.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/slick.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/slick.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/slicknav.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/slider.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/StartBlogAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Start_Blog_Single Styles_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/style.map">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/subscribe now _Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/swiper.min.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Template default CSS_Divisima.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="css/themify-icons.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/toolbar.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="css/Tracking Form Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:02:47</publishTime>
+      <publishTime>02/08/2020 17:02:47</publishTime>
     </File>
     <File Include="fonts/Flaticon.eot">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Flaticon.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Flaticon.ttf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Flaticon.woff">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Flaticon.woff2">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.eot">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.ttf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff2">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/FontAwesome.otf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>09/21/2020 16:37:29</publishTime>
@@ -580,523 +583,523 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/21/2020 16:37:29</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff2">
-      <publishTime>08/02/2020 16:17:47</publishTime>
+      <publishTime>02/08/2020 16:17:47</publishTime>
     </File>
     <File Include="fonts/Simple-Line-Icons.dev.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Simple-Line-Icons.eot">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Simple-Line-Icons.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Simple-Line-Icons.ttf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/Simple-Line-Icons.woff">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/site-icons.eot">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/site-icons.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/site-icons.ttf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/site-icons.woff">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/themify.eot">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/themify.svg">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/themify.ttf">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="fonts/themify.woff">
-      <publishTime>08/02/2020 17:04:45</publishTime>
+      <publishTime>02/08/2020 17:04:45</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>08/02/2020 16:10:39</publishTime>
+      <publishTime>02/08/2020 16:10:39</publishTime>
     </File>
     <File Include="img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/categories/Banyo/Banyo_dolapları/101967.538d437a575f0.jpeg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/categories/Banyo/Banyo_dolapları/59374.5292860b07a9b.jpeg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/categories/Banyo/Banyo_dolapları/98766.537681813e08c.jpeg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/web_img/cart/cards.png">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/web_img/cart/mastercart.png">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/web_img/cart/paypal.png">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/web_img/controls.png">
-      <publishTime>08/05/2020 20:56:25</publishTime>
+      <publishTime>05/08/2020 20:56:25</publishTime>
     </File>
     <File Include="img/web_img/favicon.ico">
-      <publishTime>08/03/2020 22:13:51</publishTime>
+      <publishTime>03/08/2020 22:13:51</publishTime>
     </File>
     <File Include="img/web_img/gorsele_erisilemiyor.jpg">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="img/web_img/logo.png">
-      <publishTime>08/02/2020 17:05:17</publishTime>
+      <publishTime>02/08/2020 17:05:17</publishTime>
     </File>
     <File Include="Scripts/aos.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>08/02/2020 16:17:47</publishTime>
+      <publishTime>02/08/2020 16:17:47</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>08/02/2020 16:17:46</publishTime>
+      <publishTime>02/08/2020 16:17:46</publishTime>
     </File>
     <File Include="Scripts/cloud-zoom.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/common.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/contact.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/countdown.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/custom.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/fontawesome/all.js">
-      <publishTime>08/04/2020 11:09:33</publishTime>
+      <publishTime>04/08/2020 11:09:33</publishTime>
     </File>
     <File Include="Scripts/fontawesome/all.min.js">
-      <publishTime>08/04/2020 11:09:33</publishTime>
+      <publishTime>04/08/2020 11:09:33</publishTime>
     </File>
     <File Include="Scripts/fontawesome/brands.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/brands.min.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/conflict-detection.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/conflict-detection.min.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/fontawesome.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/fontawesome.min.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/regular.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/regular.min.js">
-      <publishTime>08/04/2020 11:09:32</publishTime>
+      <publishTime>04/08/2020 11:09:32</publishTime>
     </File>
     <File Include="Scripts/fontawesome/solid.js">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="Scripts/fontawesome/solid.min.js">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="Scripts/fontawesome/v4-shims.js">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="Scripts/fontawesome/v4-shims.min.js">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="Scripts/gmaps.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.js">
-      <publishTime>08/02/2020 16:18:33</publishTime>
+      <publishTime>02/08/2020 16:18:33</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.min.js">
-      <publishTime>08/02/2020 16:18:33</publishTime>
+      <publishTime>02/08/2020 16:18:33</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.min.map">
-      <publishTime>08/02/2020 16:18:33</publishTime>
+      <publishTime>02/08/2020 16:18:33</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.slim.js">
-      <publishTime>08/02/2020 16:18:33</publishTime>
+      <publishTime>02/08/2020 16:18:33</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.slim.min.js">
-      <publishTime>08/02/2020 16:18:32</publishTime>
+      <publishTime>02/08/2020 16:18:32</publishTime>
     </File>
     <File Include="Scripts/jquery-3.2.1.slim.min.map">
-      <publishTime>08/02/2020 16:18:32</publishTime>
+      <publishTime>02/08/2020 16:18:32</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.js">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.min.js">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.min.map">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.js">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.js">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.map">
-      <publishTime>08/02/2020 17:09:18</publishTime>
+      <publishTime>02/08/2020 17:09:18</publishTime>
     </File>
     <File Include="Scripts/jquery-ui.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.ajaxchimp.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.bxslider.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.counterup.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.downCount.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.easing.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.flexslider.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.form.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.magnific-popup.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.mobile-menu.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.nice-select.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.nicescroll.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.slicknav.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.stellar.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/jquery.zoom.js">
-      <publishTime>08/07/2020 13:11:03</publishTime>
+      <publishTime>07/08/2020 13:11:03</publishTime>
     </File>
     <File Include="Scripts/jquery.zoom.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/left-nav.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/lightslider.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/mail-script.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/main.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/map.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/masonry.pkgd.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/masonry.pkgd.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
-      <publishTime>08/02/2020 17:09:21</publishTime>
+      <publishTime>02/08/2020 17:09:21</publishTime>
     </File>
     <File Include="Scripts/owl.carousel.min.js">
       <publishTime>08/17/2020 15:45:01</publishTime>
     </File>
     <File Include="Scripts/parallax.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/particles.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/popper.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/price_rangs.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/revolution-slider.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/revolution.extension.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/revslider.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/slick.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/slider.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/stellar.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/swiper.jquery.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/swiper.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/swiper_custom.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/theme.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Scripts/waypoints.min.js">
-      <publishTime>08/02/2020 17:07:37</publishTime>
+      <publishTime>02/08/2020 17:07:37</publishTime>
     </File>
     <File Include="Theme/AnaSayfa.html">
-      <publishTime>08/20/2020 14:47:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Theme/CHECKOUT.html">
-      <publishTime>08/05/2020 09:52:50</publishTime>
+      <publishTime>05/08/2020 09:52:50</publishTime>
     </File>
     <File Include="Theme/contact.html">
       <publishTime>08/22/2020 15:15:33</publishTime>
     </File>
     <File Include="Theme/css/Accordion_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/all.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/animate.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Animation_lookcare.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/aos.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Asidestyle._Callie.css">
-      <publishTime>08/04/2020 11:31:11</publishTime>
+      <publishTime>04/08/2020 11:31:11</publishTime>
     </File>
     <File Include="Theme/css/BannerPartcss_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Banner_Section_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/blogmate.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Blog_Partcss_Start.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap-theme.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap-theme.css.map">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap-theme.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap-theme.min.css.map">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap.css.map">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/bootstrap.min.css.map">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Card_Area_css2_Aranoz.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="Theme/css/card_inner.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Cart Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Cart page_Divisima.css">
       <publishTime>08/19/2020 10:58:24</publishTime>
     </File>
     <File Include="Theme/css/Category page_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/category_widget.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/CausesAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Checkout Page_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Client_Logo_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Common elements-Buttons_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/commoncssstart_Aranoz.css">
       <publishTime>08/20/2020 14:55:20</publishTime>
     </File>
     <File Include="Theme/css/confirmation.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Confirmationcss_Aranoz.css">
-      <publishTime>08/04/2020 11:31:11</publishTime>
+      <publishTime>04/08/2020 11:31:11</publishTime>
     </File>
     <File Include="Theme/css/contact banner_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/contact form_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Contact Page_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Contact Success and error Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/discount_sidebar_menu.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Extendcssstart_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Extend_css_start_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/fancybox.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Feature Product Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Features_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Features_Section_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/flaticon.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/flexslider.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/font-awesome.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/font-awesome.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/footer part css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/footer.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Footerstyle_Callie.css">
-      <publishTime>08/05/2020 20:08:27</publishTime>
+      <publishTime>05/08/2020 20:08:27</publishTime>
     </File>
     <File Include="Theme/css/Footer_section_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Generalstyle_Callie.css">
       <publishTime>08/17/2020 21:28:09</publishTime>
     </File>
     <File Include="Theme/css/HeaderSection_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Helpercss_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/internal.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/jquery-ui.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/jquery.bxslider.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/jquery.mobile-menu.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/LatestBlogAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Latest_Blog_Areacss_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Latest_Product_Section_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/lightslider.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/login-register.css">
       <publishTime>08/17/2020 22:22:45</publishTime>
     </File>
     <File Include="Theme/css/magnific-popup.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/MainButtonAreacss_Aranoz.css">
       <publishTime>08/19/2020 22:53:36</publishTime>
     </File>
     <File Include="Theme/css/MenuPartStart_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Navigationstyle_Callie.css">
-      <publishTime>08/04/2020 10:40:14</publishTime>
+      <publishTime>04/08/2020 10:40:14</publishTime>
     </File>
     <File Include="Theme/css/nice-select.css">
       <publishTime>08/20/2020 14:55:20</publishTime>
@@ -1105,388 +1108,388 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/17/2020 18:26:03</publishTime>
     </File>
     <File Include="Theme/css/Other Pages_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/owl.carousel.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="Theme/css/owl.carousel.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/owl.theme.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/PageHeaderstyle_Callie.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/PostPagestyle_Callie.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Preloder_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/price_rangs.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/product list css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/product list-our offer_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Product page_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Product Sidebar Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/products.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Product_Filter_Section_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Responsivestyle_Callie.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Responsive_Divisima.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/revslider.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/service_part css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/shop.css">
       <publishTime>08/19/2020 22:53:36</publishTime>
     </File>
     <File Include="Theme/css/simple-line-icons.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/single blog post=single_blog_post .single_blog .single_appartment_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Single Product Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/site-icons.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/site.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/slick-theme.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/slick.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/slick.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/slicknav.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/slider.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/StartBlogAreacss_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Start_Blog_Single Styles_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/style.map">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/subscribe now _Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/swiper.min.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Template default CSS_Divisima.css">
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="Theme/css/themify-icons.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/toolbar.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/css/Tracking Form Area css_Aranoz.css">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/Customer_information_mail.html">
       <publishTime>08/20/2020 15:47:47</publishTime>
     </File>
     <File Include="Theme/fonts/clhLqOv7MXn459PTh0gXYHW1xglZCgocDnD_teV2lMU.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Flaticon.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Flaticon.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Flaticon.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Flaticon.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Flaticon.woff2">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/fontawesome-webfont.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/fontawesome-webfont.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/fontawesome-webfont.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/fontawesome-webfont.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/fontawesome-webfont.woff2">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/FontAwesome.otf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/glyphicons-halflings-regular.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/glyphicons-halflings-regular.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/glyphicons-halflings-regular.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/revicons/index.php">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/revicons/revicons.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/revicons/revicons.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/revicons/revicons.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/revicons/revicons.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Simple-Line-Icons.dev.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Simple-Line-Icons.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Simple-Line-Icons.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Simple-Line-Icons.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/Simple-Line-Icons.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/site-icons.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/site-icons.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/site-icons.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/site-icons.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/themify.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/themify.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/themify.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/fonts/themify.woff">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/GİRİŞ.html">
       <publishTime>08/19/2020 10:58:24</publishTime>
     </File>
     <File Include="Theme/Hesabım.html">
-      <publishTime>08/05/2020 09:52:50</publishTime>
+      <publishTime>05/08/2020 09:52:50</publishTime>
     </File>
     <File Include="Theme/icon-fonts/Flaticon.eot">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/icon-fonts/Flaticon.svg">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/icon-fonts/Flaticon.ttf">
-      <publishTime>08/02/2020 17:01:45</publishTime>
+      <publishTime>02/08/2020 17:01:45</publishTime>
     </File>
     <File Include="Theme/icon-fonts/Flaticon.woff">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/icon-fonts/fontawesome-webfont.eot">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/icon-fonts/fontawesome-webfont.svg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/icon-fonts/fontawesome-webfont.woff">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/icon-fonts/fontawesome-webfont.woff2">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/categories/Banyo/Banyo_dolapları/101967.538d437a575f0.jpeg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/categories/Banyo/Banyo_dolapları/59374.5292860b07a9b.jpeg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/categories/Banyo/Banyo_dolapları/98766.537681813e08c.jpeg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/web_img/favicon.ico">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/web_img/gorsele_erisilemiyor.jpg">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/img/web_img/logo.png">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/aos.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/bootstrap.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/bootstrap.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/cloud-zoom.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/common.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/contact.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/countdown.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/custom.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/flot-data.js">
       <publishTime>09/21/2020 16:37:29</publishTime>
     </File>
     <File Include="Theme/js/gmaps.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery-1.12.1.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery-3.2.1.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery-3.3.1.slim.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery-ui.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.ajaxchimp.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.bxslider.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.counterup.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.downCount.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.easing.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.flexslider.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.form.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.magnific-popup.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.mobile-menu.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.nice-select.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.nicescroll.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.slicknav.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.stellar.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.validate.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/jquery.zoom.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/left-nav.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/lightslider.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/mail-script.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/main.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/map.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/masonry.pkgd.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/masonry.pkgd.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/morris-data.js">
       <publishTime>09/21/2020 16:37:29</publishTime>
@@ -1495,25 +1498,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/11/2020 11:32:15</publishTime>
     </File>
     <File Include="Theme/js/parallax.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/particles.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/popper.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/price_rangs.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/revolution-slider.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/revolution.extension.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/revslider.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/sb-admin-2-5.js">
       <publishTime>09/21/2020 16:37:29</publishTime>
@@ -1525,37 +1528,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/21/2020 16:37:29</publishTime>
     </File>
     <File Include="Theme/js/slick.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/slider.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/stellar.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/swiper.jquery.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/swiper.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/swiper_custom.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/theme.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/js/waypoints.min.js">
-      <publishTime>08/02/2020 17:01:46</publishTime>
+      <publishTime>02/08/2020 17:01:46</publishTime>
     </File>
     <File Include="Theme/kayıt ol.html">
       <publishTime>09/21/2020 18:16:26</publishTime>
     </File>
     <File Include="Theme/Mesaj1.html">
-      <publishTime>08/05/2020 09:52:50</publishTime>
+      <publishTime>05/08/2020 09:52:50</publishTime>
     </File>
     <File Include="Theme/Message.html">
-      <publishTime>08/05/2020 09:52:50</publishTime>
+      <publishTime>05/08/2020 09:52:50</publishTime>
     </File>
     <File Include="Theme/ürün ekle deneme.html">
       <publishTime>08/18/2020 19:28:09</publishTime>
@@ -1569,8 +1572,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Account/Login.cshtml">
       <publishTime>08/22/2020 22:04:31</publishTime>
     </File>
+    <File Include="Views/Account/myOrders.cshtml">
+      <publishTime>09/22/2020 16:41:55</publishTime>
+    </File>
     <File Include="Views/Account/SignUp.cshtml">
-      <publishTime>08/22/2020 22:10:28</publishTime>
+      <publishTime>09/22/2020 15:30:14</publishTime>
+    </File>
+    <File Include="Views/Errors/404_page.html">
+      <publishTime>09/22/2020 15:53:40</publishTime>
+    </File>
+    <File Include="Views/Errors/502_page.html">
+      <publishTime>09/22/2020 15:49:39</publishTime>
     </File>
     <File Include="Views/Home/Basket.cshtml">
       <publishTime>08/22/2020 23:16:20</publishTime>
@@ -1579,7 +1591,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/17/2020 11:52:03</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/22/2020 20:21:27</publishTime>
+      <publishTime>09/23/2020 20:32:24</publishTime>
     </File>
     <File Include="Views/Home/ProductDetails.cshtml">
       <publishTime>08/22/2020 20:44:18</publishTime>
@@ -1588,7 +1600,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2020 16:57:35</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/22/2020 23:04:39</publishTime>
+      <publishTime>09/22/2020 16:12:54</publishTime>
     </File>
     <File Include="Views/Shared/_MenuTopCategory.cshtml">
       <publishTime>08/22/2020 18:22:26</publishTime>
@@ -1597,55 +1609,55 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/19/2020 15:29:52</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>08/02/2020 17:09:14</publishTime>
+      <publishTime>02/08/2020 17:09:14</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/21/2020 18:15:52</publishTime>
+      <publishTime>09/23/2020 20:42:10</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.eot">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.svg">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.ttf">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.woff">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.woff2">
-      <publishTime>08/04/2020 11:09:31</publishTime>
+      <publishTime>04/08/2020 11:09:31</publishTime>
     </File>
     <File Include="webfonts/fa-regular-400.eot">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-regular-400.svg">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-regular-400.ttf">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-regular-400.woff">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-regular-400.woff2">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-solid-900.eot">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-solid-900.svg">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-solid-900.ttf">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-solid-900.woff">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
     <File Include="webfonts/fa-solid-900.woff2">
-      <publishTime>08/04/2020 11:09:30</publishTime>
+      <publishTime>04/08/2020 11:09:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

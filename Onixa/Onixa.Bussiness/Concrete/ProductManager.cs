@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Onixa.Bussiness.Abstact;
 using Onixa.DataAccess.Abstract;
 using Onixa.Entity;
+using Onixa.Entity.ComplexTypes;
 
 namespace Onixa.Bussiness.Concrete
 {
@@ -13,11 +14,13 @@ namespace Onixa.Bussiness.Concrete
     {
         private IProductDal _productDal;
         private  IStyleDal _styledal;
+        private IProductsImageNameDal _imageNameDal;
 
-        public ProductManager(IProductDal productDal, IStyleDal styleDal)
+        public ProductManager(IProductDal productDal, IStyleDal styleDal,IProductsImageNameDal productsImageNameDal)
         {
             _productDal = productDal;
             _styledal = styleDal;
+            _imageNameDal = productsImageNameDal;
         }
         public Products Add(Products products)
         {
@@ -40,9 +43,9 @@ namespace Onixa.Bussiness.Concrete
             return _styledal.GetAllList();
         }
 
-        public Products GetByCategoryId(int? id)
+        public List<Productimages> GetProductsImageNamesListbyProductId(int? id)
         {
-            return _productDal.GetList(x => x.Category_Id == id);
+            return _productDal.GetProductsImageNamesListbyProductId(id);
         }
 
         public List<Products> GetbyCategoryIdAll(int? id)
@@ -53,6 +56,27 @@ namespace Onixa.Bussiness.Concrete
         public Products GetByParentId(int id)
         {
             return _productDal.GetList(x=>x.Product_Id==id);
+        }
+
+        public List<Productimages> GetProductimagesesAll()
+        {
+
+           return _productDal.GetProductsImageNamesList();
+        }
+
+        public List<Productimages> GetProductimagesList()
+        {
+            return _productDal.GetProductsImageNamesList();
+        }
+
+        public List<ProductsLite> GetProductIndexList()
+        {
+            return _productDal.GetProductIndexList();
+        }
+
+        public List<ProductsLite> GetProductIndexListbyCategoryID(int? id)
+        {
+            return _productDal.GetProductIndexListbyCategoryID(id);
         }
 
         public Products Update(Products products)

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SitedbModelStoreContainer" CdmEntityContainer="SitedbContext">
-    <EntitySetMapping Name="Address">
-      <EntityTypeMapping TypeName="SitedbModel.Address">
-        <MappingFragment StoreEntitySet="Address">
+  <EntityContainerMapping StorageEntityContainer="SiteDBModelStoreContainer" CdmEntityContainer="SiteDBContext">
+    <EntitySetMapping Name="Adresses">
+      <EntityTypeMapping TypeName="SiteDBModel.Adresses">
+        <MappingFragment StoreEntitySet="Adresses">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Description" ColumnName="Description" />
@@ -14,8 +14,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="SiteDBModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_" ColumnName="Name_" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Comments">
-      <EntityTypeMapping TypeName="SitedbModel.Comments">
+      <EntityTypeMapping TypeName="SiteDBModel.Comments">
         <MappingFragment StoreEntitySet="Comments">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Text" ColumnName="Text" />
@@ -28,7 +40,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Exceptions">
-      <EntityTypeMapping TypeName="SitedbModel.Exceptions">
+      <EntityTypeMapping TypeName="SiteDBModel.Exceptions">
         <MappingFragment StoreEntitySet="Exceptions">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Message" ColumnName="Message" />
@@ -38,17 +50,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="HomeRooms">
-      <EntityTypeMapping TypeName="SitedbModel.HomeRooms">
-        <MappingFragment StoreEntitySet="HomeRooms">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
-          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Localizations">
-      <EntityTypeMapping TypeName="SitedbModel.Localizations">
+      <EntityTypeMapping TypeName="SiteDBModel.Localizations">
         <MappingFragment StoreEntitySet="Localizations">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Culture" ColumnName="Culture" />
@@ -58,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Logs">
-      <EntityTypeMapping TypeName="SitedbModel.Logs">
+      <EntityTypeMapping TypeName="SiteDBModel.Logs">
         <MappingFragment StoreEntitySet="Logs">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Description" ColumnName="Description" />
@@ -70,7 +73,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Members">
-      <EntityTypeMapping TypeName="SitedbModel.Members">
+      <EntityTypeMapping TypeName="SiteDBModel.Members">
         <MappingFragment StoreEntitySet="Members">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -86,7 +89,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Messages_">
-      <EntityTypeMapping TypeName="SitedbModel.Messages_">
+      <EntityTypeMapping TypeName="SiteDBModel.Messages_">
         <MappingFragment StoreEntitySet="Messages_">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Subject" ColumnName="Subject" />
@@ -100,7 +103,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MessagesReplies">
-      <EntityTypeMapping TypeName="SitedbModel.MessagesReplies">
+      <EntityTypeMapping TypeName="SiteDBModel.MessagesReplies">
         <MappingFragment StoreEntitySet="MessagesReplies">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Text" ColumnName="Text" />
@@ -115,7 +118,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Options">
-      <EntityTypeMapping TypeName="SitedbModel.Options">
+      <EntityTypeMapping TypeName="SiteDBModel.Options">
         <MappingFragment StoreEntitySet="Options">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -124,7 +127,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderDetails">
-      <EntityTypeMapping TypeName="SitedbModel.OrderDetails">
+      <EntityTypeMapping TypeName="SiteDBModel.OrderDetails">
         <MappingFragment StoreEntitySet="OrderDetails">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
@@ -138,8 +141,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="SiteDBModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+          <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="ProductDetails">
-      <EntityTypeMapping TypeName="SitedbModel.ProductDetails">
+      <EntityTypeMapping TypeName="SiteDBModel.ProductDetails">
         <MappingFragment StoreEntitySet="ProductDetails">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Platform" ColumnName="Platform" />
@@ -151,10 +169,29 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="SiteDBModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
+          <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
+          <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Project">
-      <EntityTypeMapping TypeName="SitedbModel.Project">
+      <EntityTypeMapping TypeName="SiteDBModel.Project">
         <MappingFragment StoreEntitySet="Project">
-          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
           <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
           <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
@@ -163,7 +200,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Role">
-      <EntityTypeMapping TypeName="SitedbModel.Role">
+      <EntityTypeMapping TypeName="SiteDBModel.Role">
         <MappingFragment StoreEntitySet="Role">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -171,7 +208,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="SitedbModel.sysdiagrams">
+      <EntityTypeMapping TypeName="SiteDBModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -182,7 +219,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="SitedbModel.Users">
+      <EntityTypeMapping TypeName="SiteDBModel.Users">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
@@ -193,67 +230,11 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users_Roles">
-      <EntityTypeMapping TypeName="SitedbModel.Users_Roles">
+      <EntityTypeMapping TypeName="SiteDBModel.Users_Roles">
         <MappingFragment StoreEntitySet="Users_Roles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="User_Id" ColumnName="User_Id" />
           <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="SitedbModel.Orders">
-        <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="HomeRoom_Id" ColumnName="HomeRoom_Id" />
-          <ScalarProperty Name="Project_Id" ColumnName="Project_Id" />
-          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-          <ScalarProperty Name="MemberDescription" ColumnName="MemberDescription" />
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-          <ScalarProperty Name="Address_Id" ColumnName="Address_Id" />
-          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="SitedbModel.Products">
-        <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-          <ScalarProperty Name="StartGivenMemberCount" ColumnName="StartGivenMemberCount" />
-          <ScalarProperty Name="UnıtInStock" ColumnName="UnıtInStock" />
-          <ScalarProperty Name="IsContinued" ColumnName="IsContinued" />
-          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
-          <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="SitedbModel.Categories">
-        <MappingFragment StoreEntitySet="Categories">
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
-          <ScalarProperty Name="Name_" ColumnName="Name_" />
-          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Styles">
-      <EntityTypeMapping TypeName="SitedbModel.Styles">
-        <MappingFragment StoreEntitySet="Styles">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
