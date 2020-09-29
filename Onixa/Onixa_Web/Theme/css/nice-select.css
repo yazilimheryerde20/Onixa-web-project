@@ -157,10 +157,7 @@ color: #A1CD39;
 }
 
 
-.form-group label {
-    color: black;
-    text-align: right;
-}
+
 label {
     display:inline; 
     max-width: 100%;

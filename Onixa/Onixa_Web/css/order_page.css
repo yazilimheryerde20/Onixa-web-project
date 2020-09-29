@@ -13,36 +13,22 @@
             -ms-flex-direction: row;
             flex-direction: row;
         }
-        *, :focus, :hover {
-            outline: none;
-        }
-        
-        * {
-            outline: none;
-            -webkit-overflow-scrolling: auto;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-        }
-        ::selection {
-          
-            color: #484848;
-        }
-        .main__sidebar {
-            max-width: 224px;
-            width: 100%;
-        }
+
+
+::selection {
+    background-color: #a1cd39;
+    color: #FFF;
+}
+.main__sidebar {
+    max-width: 224px;
+    width: 100%;
+}
         
         aside {
             display: block;
         }
-        html {
-            line-height: 1.15;
-            -webkit-text-size-adjust: 100%;
-        }
-        * {
-            outline: none;
-            -webkit-overflow-scrolling: auto;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-        }
+     
+    
         element.style {
             pointer-events: auto;
         }
@@ -797,9 +783,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
 table {
     border-collapse: collapse;
 }
@@ -849,9 +833,7 @@ img {
     float: right!important;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
 user agent stylesheet
 div {
     display: block;
@@ -954,10 +936,7 @@ div {
     height: auto;
 }
 
-input,
-label {
-    margin: .4rem 0;
-}
+
 
 .myButton {
     box-shadow: inset 0px 39px 0px -24px #a1cd39;
@@ -1030,13 +1009,5 @@ a:hover, a:focus {
     float: left;
     padding: 0 10px 10px 0;
 }
-body {
-    font-family: "Poppins", sans-serif !important;
-    font-size: 16px !important;
-    color: black !important;
-    font-weight: 400 !important;
-    overflow-x: hidden !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-}
+
 

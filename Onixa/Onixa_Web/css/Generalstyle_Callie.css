@@ -29,10 +29,7 @@ a:hover, a:focus {
   color: #FFF;
 }
 
-::selection {
-  background-color: #00000063;
-  color: #FFF;
-}
+
 
 ul, ol {
   margin: 0;
