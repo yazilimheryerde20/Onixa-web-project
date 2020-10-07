@@ -7,10 +7,10 @@
     @foreach (var item in Model.Categorieses)
     {
 
-
+        
         if (item.ParentID == null)
         {
-            <h4 class="dropdown-heading">@item.Name_</h4>
+            <h4 class="dropdown-heading"><a href="@Url.Action("index","Home",new {id=@item.Category_Id})">@item.Name_</a></h4>
         }
         var altbaslik = Model.Categorieses.FindAll(x => x.ParentID == item.Category_Id);
         if (altbaslik != null)

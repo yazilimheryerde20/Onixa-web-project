@@ -1,0 +1,36 @@
+﻿@model Onixa_Web.Models.ProductListViewModel
+<!-- Product Item #1 -->
+@foreach (var item in Model.ProductsLiteList)
+{
+    if (string.IsNullOrWhiteSpace(item.MainImage))
+    {
+        item.MainImage = "web_img/gorsele_erisilemiyor.JPG";
+    }
+    <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
+        <div class="product-img">
+            <img src="~/img/@item.MainImage" alt="product">
+            @*<div class="product-sale">
+                    İNDİRİM
+                </div>*@
+            <div class="product-hover">
+                <div class="product-cart">
+                    <a class="btn btn-secondary btn-block" href="~/Home/ProductDetails/@item.Product_Id">Detaylar</a>
+                    <a class="btn btn-secondary btn-block" href="~/Home/deneme">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+        <!-- .product-img end -->
+        <div class="product-bio">
+            <h4>
+                <a href="~/Home/ProductDetails" title="@item.Name">@item.Name</a>
+            </h4>
+            @*<p class="product-price">
+                 <span>50</span>
+                20</p>*@
+        </div>
+        <!-- .product-bio end -->
+
+    </div>
+}
+
+<!-- .product-item end -->

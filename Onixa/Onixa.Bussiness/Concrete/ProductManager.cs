@@ -14,13 +14,13 @@ namespace Onixa.Bussiness.Concrete
     {
         private IProductDal _productDal;
         private  IStyleDal _styledal;
-        private IProductsImageNameDal _imageNameDal;
+       
 
         public ProductManager(IProductDal productDal, IStyleDal styleDal,IProductsImageNameDal productsImageNameDal)
         {
             _productDal = productDal;
             _styledal = styleDal;
-            _imageNameDal = productsImageNameDal;
+            
         }
         public Products Add(Products products)
         {
@@ -72,6 +72,22 @@ namespace Onixa.Bussiness.Concrete
         public Products Update(Products products)
         {
             throw new NotImplementedException();
+        }
+
+       
+        public List<ProductsLite> GetProductIndexListbyStyleID(int? id)
+        {
+            return _productDal.GetProductIndexListbyStyleID(id);
+        }
+
+        public List<Project> GetProject()
+        {
+            return _productDal.GetProjects();
+        }
+
+        public MyBasket GetBaskets(int id)
+        {
+            return _productDal.GetMyBaskets(id);
         }
     }
 }

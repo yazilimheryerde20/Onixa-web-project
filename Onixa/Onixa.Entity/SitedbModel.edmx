@@ -165,7 +165,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Platform" Type="nvarchar" MaxLength="25" />
           <Property Name="Size" Type="int" />
-          <Property Name="Style" Type="nvarchar" MaxLength="20" />
+          <Property Name="Style" Type="int" />
           <Property Name="Product_Tag" Type="nvarchar" MaxLength="100" />
           <Property Name="AddedDate" Type="datetime" Nullable="false" />
           <Property Name="Color" Type="nchar" MaxLength="20" />
@@ -465,20 +465,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ProductDetails_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="ProductDetails" Type="Self.ProductDetails" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="Product_Id" />
-            </Principal>
-            <Dependent Role="ProductDetails">
-              <PropertyRef Name="Product_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Products_Categories">
           <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
           <End Role="Products" Type="Self.Products" Multiplicity="*" />
@@ -633,10 +619,6 @@
           <AssociationSet Name="FK_Orders_Project" Association="Self.FK_Orders_Project">
             <End Role="Project" EntitySet="Project" />
             <End Role="Orders" EntitySet="Orders" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ProductDetails_Products" Association="Self.FK_ProductDetails_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductDetails" EntitySet="ProductDetails" />
           </AssociationSet>
           <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
             <End Role="Categories" EntitySet="Categories" />
@@ -854,7 +836,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Platform" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
           <Property Name="Size" Type="Int32" />
-          <Property Name="Style" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Style" Type="Int32" />
           <Property Name="Product_Tag" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Product_Id" Type="Int32" Nullable="false" />

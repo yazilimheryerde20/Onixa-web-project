@@ -62,6 +62,7 @@
     <Compile Include="Comments.cs">
       <DependentUpon>SitedbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ComplexTypes\MyBasket.cs" />
     <Compile Include="ComplexTypes\Productimages.cs" />
     <Compile Include="ComplexTypes\ProductsLite.cs" />
     <Compile Include="Exceptions.cs">

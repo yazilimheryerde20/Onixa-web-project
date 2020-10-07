@@ -17,7 +17,7 @@ namespace Onixa.Entity
         public int Id { get; set; }
         public string Platform { get; set; }
         public Nullable<int> Size { get; set; }
-        public string Style { get; set; }
+        public Nullable<int> Style { get; set; }
         public string Product_Tag { get; set; }
         public System.DateTime AddedDate { get; set; }
         public int Product_Id { get; set; }

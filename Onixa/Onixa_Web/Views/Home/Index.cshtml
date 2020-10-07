@@ -12,42 +12,8 @@
                     @Html.Partial("_Filter", Model)
                     <!-- /Filtre -->
                     <div id="shop-all" class="row">
-                        <!-- Product Item #1 -->
-                        @foreach (var item in Model.ProductsLiteList)
-                        {
-                            if (string.IsNullOrWhiteSpace(item.MainImage))
-                            {
-                                item.MainImage = "web_img/gorsele_erisilemiyor.JPG";
-                            }
-                            <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
-                                <div class="product-img">
-                                    <img src="~/img/@item.MainImage" alt="product">
-                                    @*<div class="product-sale">
-                                            İNDİRİM
-                                        </div>*@
-                                    <div class="product-hover">
-                                        <div class="product-cart">
-                                            <a class="btn btn-secondary btn-block" href="~/Home/ProductDetails/@item.Product_Id">Detaylar</a>
-                                            <a class="btn btn-secondary btn-block" href="~/Home/deneme">Sepete Ekle</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .product-img end -->
-                                <div class="product-bio">
-                                    <h4>
-                                        <a href="~/Home/ProductDetails" title="@item.Name">@item.Name</a>
-                                    </h4>
-                                    @*<p class="product-price">
-                                         <span>50</span>
-                                        20</p>*@
-                                </div>
-                                <!-- .product-bio end -->
-
-                            </div>
-                        }
-
-                        <!-- .product-item end -->
-
+                        @Html.Partial("_ProductsList", Model)
+                       
 
                     </div>
                 </div>
@@ -64,14 +30,63 @@
     <script type="text/javascript">
 
 
+
+
+
         (function ($) {
-
             $(document).ready(function () {
-                $("#katgegori_ana_baslik").change(function () {
-                    var id = $(this).val();
 
-                    var altbaslik = $("#altbaslik");
+
+                $("#kategori_ana_baslik").change(function () {
+                    var id = $(this).val();
+                    $("#kategori_alt_baslik").empty();
+                    $('#kategori_alt_baslik').niceSelect('update');
+                    
+                    $.ajax({
+                        url: '/Home/FilterCategoryMain',
+                        type: 'POST',
+                        dataType: 'html',
+                        data: { 'id': id },
+                        success: function (data) {
+                            $("#shop-all").html(data);
+                            
+                        }
+                    });
+                });
+                $("#kategori_alt_baslik").change(function () {
+                    var id = $(this).val();
+                    
+                    $.ajax({
+                        url: '/Home/FilterCategoryMain',
+                        type: 'POST',
+                        dataType: 'html',
+                        data: { 'id': id },
+                        success: function (data) {
+                            $("#shop-all").html(data);
+
+                        }
+                    });
+                });
+
+
+
+                $('#style').change(function () {
+                    var urlInsert = '/Home/Index?style_id=' + $(this).val();
+                    window.location.href = urlInsert;
+                });
+
+
+
+
+                $("#kategori_ana_baslik").change(function () {
+                    var id = $(this).val();
+                    $("#kategori_alt_baslik_div").show();
+                    var altbaslik = $("#kategori_alt_baslik");
                     altbaslik.empty();
+                   
+                    //var urlInsert = '/Home/Index?id=' + $(this).val();
+                    //window.location.href = urlInsert;
+
                     $.ajax({
                         url: '/Home/CategoryDownTitle',
                         type: 'POST',
@@ -80,16 +95,27 @@
                         success: function (data) {
                             $.each(data,
                                 function (index, option) {
-                                    altbaslik.append("<option value=" + option.Value + ">" + option.Text + "</option>");
-                                   alert(" dfs="+option.text);
+                                    
+                                    //alert('<option value=' + index + '>' + option.Text + '</option>');
+                                    altbaslik.append('<option value=' + option.Value + '>' + option.Text + '</option>');
+                                    //$("#asd").append($('<option></option>').attr("value", '').text('asd'));
+                                    //altbaslik.append($('<option></option>').val(option).html(option));
+                                    //$('#kategori_alt_baslik').append(myselect.html());
+                                    //altbaslik.append($("<option />").val(option.Value).text(option.Text));
+                                    //altbaslik.prepend('<option value="' + option.Value + '">' + option.Text + '</option>');
+                                    //altbaslik.append($('<option></option>').val('16').html('Bursa'));
+                                    $('#kategori_alt_baslik').niceSelect('update');
                                 });
                         }
+                       
                     });
                 });
+
+
             });
 
-
         })(jQuery);
+
 
     </script>
 }

@@ -14,5 +14,8 @@ namespace Onixa.DataAccess.Abstract
         List<Productimages> GetProductsImageNamesListbyProductId(int? id);
         List<ProductsLite> GetProductIndexList();
         List<ProductsLite> GetProductIndexListbyCategoryID(int? id);
+        List<ProductsLite> GetProductIndexListbyStyleID(int? id);
+        List<Project> GetProjects();
+        MyBasket GetMyBaskets(int id);
     }
 }

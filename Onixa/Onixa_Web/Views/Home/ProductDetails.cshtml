@@ -1,8 +1,5 @@
 ﻿@model Onixa_Web.Models.ProductListViewModel
-@{
-    ViewBag.Title = "ProductDetails";
 
-}
 
 
 <style>
@@ -37,14 +34,16 @@
 </div>
 <div class="product_image_area section_padding">
     <div class="container">
+    @using (Html.BeginForm("AddBasket", "Home", FormMethod.Get))
+    {
         <div class="row s_product_inner justify-content-between">
             <div class="col-lg-7 col-xl-7">
                 <div class="product_slider_img zoom" style="position: relative; overflow: hidden;">
                     <div id="vertical">
                         @foreach (var resim in Model.Productimage.Select(x => x.Path))
                         {
-                            <div data-thumb="@Url.Content("~/img/"+resim.ToString())" class="yakinlastir">
-                                <img src="~/img/@resim.ToString()" />
+                            <div data-thumb="@Url.Content("~/img/" + resim.ToString())" class="yakinlastir">
+                                <img src="~/img/@resim.ToString()"/>
                             </div>
                         }
 
@@ -63,8 +62,8 @@
                             <span class="kdv">+kdv dahildir</span>
                         </li>-->
                         <!--DETAYLAR!-->
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <ul class="list">
                             <!--<li>
                                 <span>PLATFORM</span> :  <a href=></a>  3dsMax2013+obj</a>
@@ -96,43 +95,42 @@
                             </li>-->
                         </ul>
                     </ul>
-                    <br />
+                    <br/>
                     <!--DETAYLAR FİNİSH!-->
                     <h4>Ürün Açıklaması:</h4>
                     <p>
                         @Model.Productimage.Select(x => x.Description).FirstOrDefault()
                     </p>
-                    <br />
+                    <br/>
                     <div class="card_area">
 
                         <form>
                             <div class="input-group">
                                 <span class="input-group-addon">Oda:</span>
-                                <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+                                @Html.TextBoxFor(Model => Model.Room_Name, new {@class = "nice-select wide small", id = "room_name", placeholder = "ODA", type = "text"})
+
                             </div>
-                            <br />
+                            <br/>
                             <h4>Not Ekle:</h4>
-                            <textarea cols="60" rows="5" class="form-control" placeholder="Bir not eklemek isterseniz yazın..."></textarea>
+                            @Html.TextAreaFor(Model => Model.Note, new {@class = "form-control"})
+                            @Html.Hidden("id",Model.Productimage.Select(x=>x.Product_Id).FirstOrDefault())
+
                             <br>
                             <div class="input-group">
                                 <span class="input-group-addon">Proje:</span>
-                                <select class="nice-select wide small">
-                                    <option>ERKİN İNŞAAT</option>
-                                    <option>MATRAK İNŞAAT</option>
-                                    <option>PROJE 5</option>
-
-                                </select>
+                                @Html.DropDownListFor(Model => Model.Project_ID, new SelectList(Model.ProjectList, "Value", "Text"), ("Seçiniz"), new {@class = "nice-select wide small", id = "ProjectName", name = "ProjectName"})
                             </div>
                         </form>
-                        <br />
+                        <br/>
                         <!--<div class="product_count" style="width: fit-content;">
                             <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
                             <input class="input-number" type="text" value="1" min="0" max="10">
                             <span class="number-increment"> <i class="fa fa-plus"></i></span>
                         </div>-->
                         <div class="btn-group">
-                            <button type="button" title="Dismissible popover" class="btn btn-success btn-lg">Sepete Ekle</button>
-                            <button type="button" class="btn btn-warning btn-lg">Satıcıya Danış</button>
+                            <a href="~/Home/AddBasket/@Model.Productimage.Select(x => x.Product_Id).FirstOrDefault()" class="btn btn-success btn-lg">Sepete Ekle gari</a>
+
+                            <button type="submit" class="btn btn-warning btn-lg">Satıcıya Danış</button>
                             @*<button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>*@
                         </div>
                         @*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>*@
@@ -144,7 +142,7 @@
 
                     </div>
 
-                    <br />
+                    <br/>
                     <div class="">
 
                         <!-- Modal -->
@@ -170,6 +168,7 @@
                 </div>
             </div>
         </div>
+    }
     </div>
 </div>
 
@@ -236,6 +235,7 @@
         </div>
     </div>
 </section>
+
 @section scripts{
     <script type="text/javascript">
         (function ($) {

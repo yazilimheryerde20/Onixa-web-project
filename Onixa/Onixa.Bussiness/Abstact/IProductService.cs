@@ -15,9 +15,11 @@ namespace Onixa.Bussiness.Abstact
         List<Styles> GetAllStyles();
         Products GetByParentId(int id);
        List<Productimages>  GetProductsImageListbyProductId(int? id);
-     
+       List<ProductsLite> GetProductIndexListbyStyleID(int? id);
         List<ProductsLite> GetProductIndexList();
         List<ProductsLite> GetProductIndexListbyCategoryID(int? id);
+        List<Project> GetProject();
+        MyBasket GetBaskets(int id);
         Products Add(Products products);
         Products Update(Products products);
         void Delete(Products products);

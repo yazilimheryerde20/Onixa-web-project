@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Onixa.Entity.ComplexTypes
 {
-   public class ProductsLite
+   public class MyBasket
     {
         public int Product_Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Category_Id { get; set; }
         public string MainImage { get; set; }
-        public string Style_Name { get; set; }
+        public string Note { get; set; }
+        public Nullable<int>  Project_ID { get; set; }
+        public string Room_Name { get; set; }
+
     }
 }

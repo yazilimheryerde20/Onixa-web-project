@@ -1,5 +1,7 @@
-﻿<section class="cart-section spad">
+﻿@model List<Onixa_Web.Models.BasketModel>
+<section class="cart-section spad">
     <div class="container">
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="cart-table">
@@ -19,134 +21,43 @@
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="fa fa-trash fa-2x"></button>
-                                            </div>
-                                        </td>
-                                        <td class="product-col">
-                                            <img src="img/web_img/cart-1.jpg" alt="">
-                                            <div class="pc-title">
-                                                <h4>Animal Print Dress</h4>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="fa fa-trash fa-2x"></button>
+                                                </div>
+                                            </td>
+                                            <td class="product-col">
+                                                <img src="~/img/@item.MyBasketbyProduct.MainImage" alt="@item.MyBasketbyProduct.Name">
+                                                <div class="pc-title">
+                                                    <h4>@item.MyBasketbyProduct.Name</h4>
 
-                                            </div>
-                                        </td>
-                                        <td class="project-col">
-                                            <div class="nice-select wide small" tabindex="0"><span class="current">1</span><ul class="list"><li data-value="1" class="option selected focus">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li><li data-value="4" class="option">4</li></ul></div>
-                                        </td>
+                                                </div>
+                                            </td>
+                                            <td class="project-col">
+                                               
+                                                @*<div class="nice-select wide small" tabindex="0">
+                                                        <span class="current">1</span>
+                                                        <ul class="list">
+                                                            <li data-value="1" class="option selected focus">1</li>
+                                                            <li data-value="2" class="option">2</li>
+                                                            <li data-value="3" class="option">3</li>
+                                                            <li data-value="4" class="option">4</li>
+                                                        </ul>
+                                                    </div>*@
+                                            </td>
 
-                                        <!-- <th> <td >41mb</td></th>-->
+                                            <!-- <th> <td >41mb</td></th>-->
 
-                                        <td class="room-col">
-                                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Text">
-                                        </td>
-                                        <!-- <th><td >₺650</td> </th>-->
-                                    </tr>
+                                            <td class="room-col">
+                                                <input id="msg" type="text" class="form-control" name="msg"  value="@item.MyBasketbyProduct.Room_Name">
+                                            </td>
+                                            <!-- <th><td >₺650</td> </th>-->
+                                        </tr>
+                                    }
 
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="fa fa-trash fa-2x"></button>
-                                            </div>
-                                        </td>
-                                        <td class="product-col">
-                                            <img src="img/web_img/cart-1.jpg" alt="">
-                                            <div class="pc-title">
-                                                <h4>Animal Print Dress</h4>
-
-                                            </div>
-                                        </td>
-                                        <td class="project-col">
-                                            <div class="nice-select wide small" tabindex="0"><span class="current">1</span><ul class="list"><li data-value="1" class="option selected focus">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li><li data-value="4" class="option">4</li></ul></div>
-                                        </td>
-
-                                        <!-- <th> <td >41mb</td></th>-->
-
-                                        <td class="room-col">
-                                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Text">
-                                        </td>
-                                        <!-- <th><td >₺650</td> </th>-->
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="fa fa-trash fa-2x"></button>
-                                            </div>
-                                        </td>
-                                        <td class="product-col">
-                                            <img src="img/web_img/cart-1.jpg" alt="">
-                                            <div class="pc-title">
-                                                <h4>Animal Print Dress</h4>
-
-                                            </div>
-                                        </td>
-                                        <td class="project-col">
-                                            <div class="nice-select wide small" tabindex="0"><span class="current">1</span><ul class="list"><li data-value="1" class="option selected focus">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li><li data-value="4" class="option">4</li></ul></div>
-                                        </td>
-
-                                        <!-- <th> <td >41mb</td></th>-->
-
-                                        <td class="room-col">
-                                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Text">
-                                        </td>
-                                        <!-- <th><td >₺650</td> </th>-->
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="fa fa-trash fa-2x"></button>
-                                            </div>
-                                        </td>
-                                        <td class="product-col">
-                                            <img src="img/web_img/cart-1.jpg" alt="">
-                                            <div class="pc-title">
-                                                <h4>Animal Print Dress</h4>
-
-                                            </div>
-                                        </td>
-                                        <td class="project-col">
-                                            <div class="nice-select wide small" tabindex="0"><span class="current">1</span><ul class="list"><li data-value="1" class="option selected focus">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li><li data-value="4" class="option">4</li></ul></div>
-                                        </td>
-
-                                        <!-- <th> <td >41mb</td></th>-->
-
-                                        <td class="room-col">
-                                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Text">
-                                        </td>
-                                        <!-- <th><td >₺650</td> </th>-->
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="fa fa-trash fa-2x"></button>
-                                            </div>
-                                        </td>
-                                        <td class="product-col">
-                                            <img src="img/web_img/cart-1.jpg" alt="">
-                                            <div class="pc-title">
-                                                <h4>Animal Print Dress</h4>
-
-                                            </div>
-                                        </td>
-                                        <td class="project-col">
-                                            <div class="nice-select wide small" tabindex="0"><span class="current">1</span><ul class="list"><li data-value="1" class="option selected focus">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li><li data-value="4" class="option">4</li></ul></div>
-                                        </td>
-
-                                        <!-- <th> <td >41mb</td></th>-->
-
-                                        <td class="room-col">
-                                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Text">
-                                        </td>
-                                        <!-- <th><td >₺650</td> </th>-->
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                    </tr>
 
                                 </tbody>
 
@@ -166,17 +77,12 @@
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <!--<h6>Toplam:<span>₺995.90</span>-->
+
                                 <a href="#" class="myButton">Siparişi tamamla</a>
-                                </h6>
+
                             </div>
                         </div>
                     </div>
-
-
-
-
-
 
 
 
@@ -184,6 +90,8 @@
             </div>
 
         </div>
+
+
         <div class="Yazi">
             <p>
                 Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.
@@ -351,5 +259,4 @@
         })(jQuery);
     </script>
 }
-
 

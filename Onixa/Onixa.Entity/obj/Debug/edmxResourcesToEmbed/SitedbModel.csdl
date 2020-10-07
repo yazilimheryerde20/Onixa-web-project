@@ -191,7 +191,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Platform" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
     <Property Name="Size" Type="Int32" />
-    <Property Name="Style" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Style" Type="Int32" />
     <Property Name="Product_Tag" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Product_Id" Type="Int32" Nullable="false" />
